@@ -98,9 +98,9 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 * [ ] **Favicons:** ![Média][medium_img] Cada favicon foi criado e é exibido corretamente. Se você tem apenas um `favicon.ico`, ponha-o na raiz do seu site. Normalmente você não precisa usar nenhum markup. Entretanto, ainda é uma boa prática linkar ele usando o exemplo abaixo. Atualmente, **o formato PNG é recomendado** ao invés do formato `.ico` (dimensões: 32x32px).
 
 ```html
-<!-- Standard favicon -->
+<!-- Favicon padrão -->
 <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
-<!-- Recommended favicon format -->
+<!-- Formato favicon recomendado -->
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
@@ -222,7 +222,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
 > * 🛠 Teste sua página com o [Twitter card validator](https://cards-dev.twitter.com/validator)
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -265,7 +265,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > [Pixel Perfect - Extensão Chrome](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -280,7 +280,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Tamanho de webfont:** ![Alta][high_img] Tamanhos de webfont não excedem 2 MB (todas variantes incluídas).
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -345,7 +345,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -369,7 +369,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Texto alternativo:** ![Alta][high_img] Todas tags `<img>` têm um texto alternativo que as descreve visualmente.
 * [ ] **Lazy loading:** ![Média][medium_img] Imagens são lazyloaded (Um noscript fallback é sempre providenciado).
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -401,7 +401,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [ESLint - The pluggable linting utility for JavaScript e JSX](https://eslint.org/)
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -445,7 +445,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [X-Frame-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 > * 📖 [RFC7034 - HTTP Header Field X-Frame-Options](https://tools.ietf.org/html/rfc7034)
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -507,7 +507,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 🛠 [Teste sua velocidade mobile com Google](https://testmysite.withgoogle.com)
 > * 🛠 [WebPagetest - Teste de Performance e Otimização de Website](https://www.webpagetest.org/)
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -564,7 +564,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > 📹 [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -588,7 +588,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 🛠 [Sitemap generator](https://websiteseochecker.com/html-sitemap-generator/)
 
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -613,7 +613,7 @@ Se você quer mostrar que está seguindo as regras do Front-End Checklist, ponha
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 ```
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 ---
 
@@ -652,7 +652,7 @@ Se você tem alguma pergunta ou sugestão, não hesite em usar o Gitter ou Twitt
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ voltar ao topo](#índice)**
+**[⬆ voltar ao topo](#Índice)**
 
 [low_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-low.png
 [medium_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-medium.png
