@@ -225,7 +225,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
-> * 📖 [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
+> * 📖 [Iniciando com cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
 > * 🛠 Teste sua página com o [Twitter card validator](https://cards-dev.twitter.com/validator)
 
 **[⬆ voltar ao topo](#Índice)**
