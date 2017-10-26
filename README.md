@@ -98,6 +98,8 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 <meta name="description" content="Descrição da página com menos de 150 caracteres">
 ```
 
+> * 📖[Meta Descrição - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
+
 * [ ] **Favicons:** ![Média][medium_img] Cada favicon foi criado e é exibido corretamente. Se você tem apenas um `favicon.ico`, ponha-o na raiz do seu site. Normalmente você não precisa usar nenhum markup. Entretanto, ainda é uma boa prática linkar ele usando o exemplo abaixo. Atualmente, **o formato PNG é recomendado** ao invés do formato `.ico` (dimensões: 32x32px).
 
 ```html
@@ -159,14 +161,14 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ### Tags HTML
 
-* [ ] **Language tag:** ![Alta][high_img] A tag de idioma do seu website é especificada e relacionada ao idioma atual da página.
+* [ ] **Atributo de linguagem:** ![Alta][high_img] A tag de idioma do seu website é especificada e relacionada ao idioma atual da página.
 
 ```html
 <!-- Indicamos o idioma definido para a página atual -->
 <html lang="pt-br">
 ```
 
-* [ ] **Direction attribute:** ![Média][medium_img] A direção de leitura é especificada na tag `<html>` (Pode ser usada em outra tag HTML).
+* [ ] **Atributo de direção:** ![Média][medium_img] A direção de leitura é especificada na tag `<html>` (Pode ser usada em outra tag HTML).
 
 ```html
 <!-- Indicamos a direção de leitura (rtl é sigla para right to left, isto é, da direita para a esquerda) -->
@@ -210,7 +212,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <meta property="og:locale" content="en_US">
 ```
 
-> * 📖 [A Guide to Sharing for Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
+> * 📖 [Um Guia de Compartilhamento para Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
 > * 🛠 Teste sua página com o [Facebook OG testing](https://developers.facebook.com/tools/debug/)
 
 * [ ] **Twitter Card:** ![Baixa][low_img]
@@ -248,7 +250,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Retirando comentários:** ![Baixa][low_img] Código desnecessário precisa ser removido antes de enviar a página para produção.
 
-### HTML testing
+### Testando HTML
 
 * [ ] **W3C compliant:** ![Alta][high_img] Todas as páginas precisam ser testadas com o validador W3C para identificar possíveis problemas no código HTML.
 
@@ -265,7 +267,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
-* [ ] **Teste Adblockers:** ![Média][medium_img] Seu website mostra o conteúdo corretamente com adblockers habilitados (Você pode providenciar uma mensagem encorajando os usuários a desabilitar o adblocker).
+* [ ] **Teste Bloqueadores de Publicidade:** ![Média][medium_img] Seu website mostra o conteúdo corretamente com adblockers habilitados (Você pode providenciar uma mensagem encorajando os usuários a desabilitar o adblocker).
 
 - [ ] **Pixel perfect:** ![Alta][high_img] Páginas estão alinhadas com o que foi desenhado. Dependendo da quantidade de profisionais criativos, pode não ser 100% exato, mas sua página precisa estar próxima ao seu template.
 
@@ -281,7 +283,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff).
 > * 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff2).
-> * 📖 [TTF/OTF - TrueType e OpenType font support](https://caniuse.com/#feat=ttf)
+> * 📖 [TTF/OTF - Suporte a fonte TrueType e OpenType](https://caniuse.com/#feat=ttf)
 > * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
 * [ ] **Tamanho de webfont:** ![Alta][high_img] Tamanhos de webfont não excedem 2 MB (todas variantes incluídas).
