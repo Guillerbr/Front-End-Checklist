@@ -304,7 +304,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 > * 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-* [ ] **JS prefix:** ![Baixa][low_img] Todas as classes (ou id- usados em arquivos) begin with **js-** e are not styled into the CSS files.
+* [ ] **JS prefix:** ![Baixa][low_img] Todas as classes (ou id- usados em arquivos) começam com **js-** e não estão estilizadas nos arquivos CSS.
 
 ```html
 <div id="js-slider" class="my-slider">
@@ -364,7 +364,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Optimization:** ![Alta][high_img] Todas as imagens são otimizadas para renderização no navegador. Formato WebP poderia ser usado para páginas críticas (como a Homepage).
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
-> * 🛠 Use [ImageOptim](https://imageoptim.com/) to optimise your images for free.
+> * 🛠 Use [ImageOptim](https://imageoptim.com/) para otimizar suas imagens gratuitamente.
 
 * [ ] **Retina:** ![Baixa][low_img] Você providencia imagens em layout x2 ou 3x, e suporta retina display.
 * [ ] **Sprite:** ![Média][medium_img] Imagens pequenas estão num arquivo sprite (no caso de ícones, eles podem estar num sprite SVG).
@@ -387,7 +387,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Concatenation:** ![Alta][high_img] Arquivos JavaScript são concatenados.
 * [ ] **Minification:** ![Alta][high_img] Arquivos JavaScript são minificados (você pode adicionar o sufixo `.min`).
 
-> * 📖 [Minifkicar Recursos (HTML, CSS, e JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
+> * 📖 [Minificar Recursos (HTML, CSS, e JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
 
 * [ ] **JavaScript security:**
 
@@ -405,7 +405,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **ESLint:** ![Alta][high_img] Nenhum erro é visível pelo ESLint (baseando-se nas sua configuração ou regras pré-estabelecidas).
 
-> * 📖 [ESLint - The pluggable linting utility for JavaScript e JSX](https://eslint.org/)
+> * 📖 [ESLint - A utilidade de linting plugável para JavaScript e JSX](https://eslint.org/)
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -503,7 +503,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <link rel="preload" href="app.js">
 ```
 
-> * 📖 [Difference between prefetch e preload](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
+> * 📖 [Diferença entre prefetch e preload](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
 
 ### Performance testing
 
@@ -581,7 +581,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **sitemap.xml:** ![Alta][high_img] Um sitemap.xml existe e foi submetido ao Google Search Console (anteriormente Google Webmaster Tools).
 * [ ] **robots.txt:** ![Alta][high_img] O robots.txt não está bloqueando webpages.
 
-> * 🛠 Test your robots.txt with [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
+> * 🛠 Test seu robots.txt com [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
 
 * [ ] **Dados Estruturados:** ![Alta][high_img] Páginas usando dados estruturados são testadas e não possuem erros. Dados estruturados ajudam crawlers a entender o conteúdo da página atual.
 
