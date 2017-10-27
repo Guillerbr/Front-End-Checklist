@@ -89,7 +89,8 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 <title>Título de Página menor que 65 caracteres</title>
 ```
 
-> 📖 [Título - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
+> * 📖 [Título - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
+> * 🛠 [Gerador de Snippets SERP](https://www.sistrix.com/serp-snippet-generator/)
 
 * [ ] **Descrição:** ![Alta][high_img] Uma meta decrição é providenciada, é única e não possui mais de 150 caracteres.
 
@@ -109,13 +110,13 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
-> * 🛠 [Favicon Generator](https://www.favicon-generator.org/)
+> * 🛠 [Gerador de Favicon](https://www.favicon-generator.org/)
 > * 🛠 [RealFaviconGenerator](https://realfavicongenerator.net/)
 > * 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Qual Você Precisa? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Touch Icon:** ![Baixa][low_img] Apple touch favicon `apple-mobile-web-app-capable` está presente. *(Crie seu arquivo Apple Icon com pelo menos dimensão 200x200px para dar suporte a todas dimensões que você pode precisar)*
+* [ ] **Apple Touch Icon:** ![Baixa][low_img] O apple touch favicon `apple-mobile-web-app-capable` está presente. *(Crie seu arquivo Apple Icon com pelo menos dimensão 200x200px para dar suporte a todas dimensões que você pode precisar)*
 
 ```html
 <!-- Apple Touch Icon -->
@@ -190,7 +191,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **RSS feed:** ![Baixa][low_img] Se seu projeto é um blog ou possui artigos, foi providenciado o link do RSS.
 
-* [ ] **CSS Crítico:** ![Média][medium_img] O CSS crítico (ou "above the fold") coleta todo CSS usado para renderizar a porção visível da página. Ele é embutido antes da chamada CSS principal e entre `<style></style>` numa linha única (minificado).
+* [ ] **CSS Crítico inline:** ![Média][medium_img] CSS que estiliza conteúdo que é imediatamente visível durante arregamento de páginas (conteúdo "above the fold") é denominado "CSS Crítico. Ele é embutido antes da chamada CSS principal e entre `<style></style>` numa linha única (minificado).
 
 > * 🛠 [Critical por Addy Osmani no Github](https://github.com/addyosmani/critical)
 
@@ -260,18 +261,11 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 🛠 [Dirty markup](https://dirtymarkup.com/)
 
-* [ ] **Navegadores Desktop:** ![Alta][high_img] Todas as páginas foram testadas em todos navegadores desktop atuais (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
-* [ ] **Navegadores Mobile:**  ![Alta][high_img] Todas as páginas foram testadas em todos navegadores mobile atuais (Native browser, Chrome, Safari...).
-
 * [ ] **Verificador de Link:** ![Alta][high_img] Não há links quebrados na minha página, verifique que você não tem nenhum erro 404.
 
 > * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
 * [ ] **Teste Bloqueadores de Publicidade:** ![Média][medium_img] Seu website mostra o conteúdo corretamente com adblockers habilitados (Você pode providenciar uma mensagem encorajando os usuários a desabilitar o adblocker).
-
-- [ ] **Pixel perfect:** ![Alta][high_img] Páginas estão alinhadas com o que foi desenhado. Dependendo da quantidade de profisionais criativos, pode não ser 100% exato, mas sua página precisa estar próxima ao seu template.
-
-> [Pixel Perfect - Extensão Chrome](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -314,8 +308,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **CSS embed ou line:** ![Alta][high_img] Evite a todo custo o uso de CSS embutido ou inline: apenas utilizado por razões válidas (ex: background-image para slider, CSS critical).
-* [ ] **Vendor prefixes:** ![Alta][high_img] CSS vendor prefixes são usados e gerados de acordo com sua compatibilidade e suporte a navegadores.
+* [ ] **CSS embed ou line:** ![Alta][high_img] Evite a todo custo o uso de CSS embutido em tags `<style>` ou inline: apenas utilizado por razões válidas (ex: background-image para slider, CSS critical).
+* [ ] **Vendor prefixes:** ![Alta][high_img] Prefixos CSS de _vendor_ são usados e gerados de acordo com sua compatibilidade e suporte a navegadores.
 
 > * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
@@ -348,7 +342,15 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-* [ ] **Reading direction:** ![Alta][high_img] Todas as páginas precisam ser testadas para idiomas LTR e RTL se elas precisarem dar esse suporte.
+* [ ] **Navegadores Desktop:** ![High][high_img] Todas as páginas foram testadas em todos os navegadores desktop atuais (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
+* [ ] **Navegadores Mobile:**  ![High][high_img] Todas as páginas foram testadas em todos os navegadores mobile atuais (Native browser, Chrome, Safari...).
+* [ ] **SO:**  ![High][high_img] Todas as páginas foram testadas em todos os Sistemas Operacionais atuais (Windows, Android, iOS, Mac...).
+
+- [ ] **Pixel perfect:** ![High][high_img] Páginas estão alinhadas com o que foi desenhado. Dependendo na qualidade dos profissionais da área criativa, pode não ser 100% exato, mas sua página precisa estar próxima ao seu template.
+
+> [Pixel Perfect - Extensão Chrome](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
+
+* [ ] **Direção de leitura:** ![High][high_img] Todas as páginas precisam ser testadas para idiomas LTR e RTL se elas precisarem dar esse suporte.
 
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
@@ -368,9 +370,14 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 Use [ImageOptim](https://imageoptim.com/) para otimizar suas imagens gratuitamente.
 
+* [ ] **Picture/Srcset:** ![Medium][medium_img] Você usa picture/srcset para providenciar a imagem mais apropriada para o viewport atual do usuário.
+
+> * 📖 [Como construir Imagens Responsivas com srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
+
 * [ ] **Retina:** ![Baixa][low_img] Você providencia imagens em layout x2 ou 3x, e suporta retina display.
 * [ ] **Sprite:** ![Média][medium_img] Imagens pequenas estão num arquivo sprite (no caso de ícones, eles podem estar num sprite SVG).
 * [ ] **Width e Height:** ![Alta][high_img] Determine os atributos `width` e `height` em `<img>` se a imagem final renderizada é conhecida (pode ser omitido para CSS sizing).
+* [ ] **Texto alternativo:** ![High][high_img] Todas as tags `<img>` têm um texto alternativo que descreve a imagem visualmente.
 
 > ***Nota:*** Vários desenvolvedores assumem que altura e largura não são compatíveis com design web responsivo. Absolutamente não é o caso.
 
@@ -477,7 +484,11 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 > * 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
 
-### Preparando requests encaminhadas
+* [ ] **Componentes de terceiros:** ![Medium][medium_img] Iframes ou componentes de terceiros ("third party") que dependam em JavaScript externo (como botões de compartilhamento) são substituidos por componentes estáticos quando possível, assim limitando chamadas a APIs externas, e mantendo privadas as atividades de seus usuários.
+
+> * 🛠 [Gerador botões de compartilhamento simples](https://simplesharingbuttons.com/)
+
+### Preparing upcoming requests
 
 > * 📖 [Explicação das técnicas seguintes](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
@@ -593,8 +604,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Sitemap HTML:** ![Média][medium_img] Um sitemap HTML é providenciado e acessível via um link no rodapé do seu website.
 
-> * 📖 [Sitemap guidelines - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
-> * 🛠 [Sitemap generator](https://websiteseochecker.com/html-sitemap-generator/)
+> * 📖 [Diretrizes para Sitemaps - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
+> * 🛠 [Gerador de Sitemap](https://websiteseochecker.com/html-sitemap-generator/)
 
 
 **[⬆ voltar ao topo](#Índice)**
