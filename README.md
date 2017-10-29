@@ -203,6 +203,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Facebook Open Graph:** ![Baixa][low_img] Todos os Facebook Open Graph (OG) são testados e nenhum está faltando ou com informações falsas. Imagens precisam ter no mínimo 600 x 315 píxels, 1200 x 630 píxels recomendados.
 
+> **Notes:** Using use `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
+
 ```html
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://example.com/page.html">
@@ -211,9 +213,13 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
+<!-- Next tags are optional but recommended -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 ```
 
 > * 📖 [Um Guia de Compartilhamento para Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
+> * 📖 [Melhores Práticas - Compartilhamento](https://developers.facebook.com/docs/sharing/best-practices/)
 > * 🛠 Teste sua página com o [Facebook OG testing](https://developers.facebook.com/tools/debug/)
 
 * [ ] **Twitter Card:** ![Baixa][low_img]
@@ -273,6 +279,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ## Webfonts
 
+> **Notas:** Usar webfonts pode causar um _flash_ de texto invisível ou sem estilização - cogite ter fontes reserva e/ou utilizar webfont loaders para controlar esse comportamento.
+
 * [ ] **Formato de webfont:** ![Alta][high_img] WOFF, WOFF2 e TTF são suportados por todos os navegadores modernos.
 
 > * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff).
@@ -280,7 +288,11 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [TTF/OTF - Suporte a fonte TrueType e OpenType](https://caniuse.com/#feat=ttf)
 > * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-* [ ] **Tamanho de webfont:** ![Alta][high_img] Tamanhos de webfont não excedem 2 MB (todas variantes incluídas).
+* [ ] **Tamanho de webfont:** ![Alta][high_img] Tamanhos de webfont não excedem 2 MB (todas variantes inclusas).
+
+* [ ] **Webfont loader:** ![Low][low_img] Controle o comportamento de carregamento com um webfont loader
+
+> * 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -288,7 +300,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ## CSS
 
-> **Notas:** Dê uma olhada em [Guidelines CSS](https://cssguidelin.es/) e [Guidelines Sass](https://sass-guidelin.es/) seguidas pela maioria dos desenvolvedores Front-End. Se você tem alguma dúvida sobre propriedades CSS, você pode visitar a [CSS Reference](http://cssreference.io/).
+> **Notas:** Dê uma olhada em [Guidelines CSS](https://cssguidelin.es/) e [Guidelines Sass](https://sass-guidelin.es/) seguidas pela maioria dos desenvolvedores Front-End. Se você tem alguma dúvida sobre propriedades CSS, você pode visitar a [CSS Reference](http://cssreference.io/). Existe também um pequeno [Guia de Código](http://codeguide.co/) para consistência.
 
 * [ ] **Web Design Responsivo:** ![Alta][high_img] O website está usando web design responsivo.
 * [ ] **CSS Print:** ![Média][medium_img] Uma stylesheet de impressão correta é providenciada em cada página.
@@ -616,11 +628,13 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 O Front-End Checklist também está disponível em outros idiomas. Obrigado a todos tradutores por seu incrível trabalho!
 
+* 🇺🇸 Inglês: [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist)
 * 🇯🇵 Japonês: [miya0001/Front-End-Checklist](https://github.com/miya0001/Front-End-Checklist)
 * 🇪🇸 Espanhol: [eoasakura/Front-End-Checklist-ES](https://github.com/eoasakura/Front-End-Checklist-ES)
 * 🇨🇳 Chinês: [JohnsenZhou/Front-End-Checklist](https://github.com/JohnsenZhou/Front-End-Checklist)
 * 🇰🇷 Coreano: [kesuskim/Front-End-Checklist](https://github.com/kesuskim/Front-End-Checklist)
 * 🇻🇳 Vietnamita: [euclid1990/Front-End-Checklist](https://github.com/euclid1990/Front-End-Checklist)
+* 🇹🇼 Chinês Tradicional: [EngineLin/Front-End-Checklist](https://github.com/EngineLin/Front-End-Checklist)
 
 ---
 
@@ -663,6 +677,7 @@ Veja todos os incríveis [contribuidores](https://github.com/thedaviddias/fronte
 Se você tem alguma pergunta ou sugestão, não hesite em usar o Gitter ou Twitter:
 
 * [Chat no Gitter](https://gitter.im/Front-End-Checklist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+* [Facebook](https://www.facebook.com/frontendchecklist/)
 * [Twitter](https://twitter.com/thedaviddias)
 
 ## Autores
