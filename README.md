@@ -86,7 +86,7 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 
 ```html
 <!-- Título do Document -->
-<title>Título de Página menor que 65 caracteres</title>
+<title>Título de Página menor que 55 caracteres</title>
 ```
 
 > * 📖 [Título - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
@@ -280,6 +280,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 ## Webfonts
 
 > **Notas:** Usar webfonts pode causar um _flash_ de texto invisível ou sem estilização - cogite ter fontes reserva e/ou utilizar webfont loaders para controlar esse comportamento.
+> * 📖 [Considerações técnicas da Google sobre webfonts](https://developers.google.com/fonts/docs/technical_considerations)
 
 * [ ] **Formato de webfont:** ![Alta][high_img] WOFF, WOFF2 e TTF são suportados por todos os navegadores modernos.
 
@@ -381,6 +382,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 Use [ImageOptim](https://imageoptim.com/) para otimizar suas imagens gratuitamente.
+> * 🛠 Use [Kraken.io](https://kraken.io/web-interface) como uma alternativa incrível para otimização tanto png quanto jpg. Até 1MB por arquivo no plano gratuito.
 
 * [ ] **Picture/Srcset:** ![Medium][medium_img] Você usa picture/srcset para providenciar a imagem mais apropriada para o viewport atual do usuário.
 
@@ -570,6 +572,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 - [ ] **Role main:** ![Alta][high_img] `<main>` tem `role="main"`.
 
 > * 📖 [Usando landmarks ARIA para identificar regiões de uma página](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
+> * 📖 [Categorização de roles ARIA](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
 
 ### Semantics
 
@@ -618,7 +621,6 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [Diretrizes para Sitemaps - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
 > * 🛠 [Gerador de Sitemap](https://websiteseochecker.com/html-sitemap-generator/)
-
 
 **[⬆ voltar ao topo](#Índice)**
 
