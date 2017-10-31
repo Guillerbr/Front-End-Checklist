@@ -192,8 +192,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **RSS feed:** ![Baixa][low_img] Se seu projeto é um blog ou possui artigos, foi providenciado o link do RSS.
 
 * [ ] **CSS Crítico inline:** ![Média][medium_img] CSS que estiliza conteúdo que é imediatamente visível durante carregamento de páginas (conteúdo "above the fold") é denominado "CSS Crítico. Ele é embutido antes da chamada CSS principal e entre `<style></style>` numa linha única (minificado).
-
-> * 🛠 [Critical por Addy Osmani no Github](https://github.com/addyosmani/critical)
+> * 🛠 [Critical por Addy Osmani no Github](https://github.com/addyosmani/critical) automatiza isso
 
 * [ ] **Ordem CSS:** ![Alta][high_img] Todos os arquivos CSS são carregados antes de quaisquer arquivos JavaScript no `<head>` (Exceto no caso onde, algumas vezes, arquivos JS são carregados assíncronamente no topo da página).
 
@@ -266,6 +265,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **HTML Lint:** ![Alta][high_img] Eu uso ferramentas para me ajudar a analisar quaisquer problemas que eu poderia ter com meu código HTML.
 
 > * 🛠 [Dirty markup](https://dirtymarkup.com/)
+
+> * 🛠 [Sonar, uma ferramenta de linting para a web](https://sonarwhal.com/)
 
 * [ ] **Verificador de Link:** ![Alta][high_img] Não há links quebrados na minha página, verifique que você não tem nenhum erro 404.
 
@@ -392,7 +393,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Sprite:** ![Média][medium_img] Imagens pequenas estão num arquivo sprite (no caso de ícones, eles podem estar num sprite SVG).
 * [ ] **Altura e Largura:** ![Alta][high_img] Determine os atributos `width` e `height` em `<img>` se a imagem final renderizada é conhecida (pode ser omitido para CSS sizing).
 * [ ] **Texto alternativo:** ![High][high_img] Todas as tags `<img>` têm um texto alternativo que descreve a imagem visualmente.
-* [ ] **Lazy loading:** ![Média][medium_img] Imagens são lazyloaded (Um noscript fallback é sempre providenciado).
+* [ ] **Lazy loading:** ![Média][medium_img] Imagens são carregadas de modo _lazy_, ou seja, por demanda (Um fallback para noscript é sempre providenciado).
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -458,8 +459,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Cross Site Scripting (XSS):** ![Alta][high_img] Sua página ou website está livre de possíveis problemas com XSS.
 
-> * 📖 [XSS (Cross Site Scripting) Prevention Cheat Sheet  - OWASP](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)
-> * 📖 [DOM based XSS Prevention Cheat Sheet  - OWASP](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet)
+> * 📖 [Cheat Sheet de Prevenção XSS (Cross Site Scripting)  - OWASP](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)
+> * 📖 [Cheat Sheet de Prevenção XSS baseada no DOM  - OWASP](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet)
 
 * [ ] **Content Type Options** ![Média][medium_img] Previne Google Chrome e Internet Explorer de tentar aplicar mime-sniff no content-type de uma response em relação ao que foi declarado no server.
 
@@ -469,6 +470,12 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [X-Frame-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 > * 📖 [RFC7034 - HTTP Header Field X-Frame-Options](https://tools.ietf.org/html/rfc7034)
+
+* [ ] **Política de Segurança de Conteúdo** ![Medium][medium_img] Define como o conteúdo é carregado no seu site e de onde é permitido que seja carregado. Pode também ser usada para se proteger contra ataques de _clickjacking_.
+
+> * 📖 [Política de Segurança de Conteúdo - Uma Introdução - Scott Helme](https://scotthelme.co.uk/content-security-policy-an-introduction/)
+> * 📖 [Cheat Sheet CSP - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
+> * 📖 [Cheat Sheet CSP - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -480,8 +487,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 - [ ] **Peso por página:** ![Alta][high_img] O peso de cada página está entre 0 e 500 KB.
 
-> * 🛠 [Website Page Analysis](https://tools.pingdom.com)
-> * 📖 [Size Limit: Make the Web lighter](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
+> * 🛠 [Análise de Página de Website](https://tools.pingdom.com)
+> * 📖 [Limite de Tamanho: Tornando a Web mais leve](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
 - [ ] **Minificado:** ![Média][medium_img] Seu HTML está minificado.
 > * 🛠 [Validador W3C](https://validator.w3.org/)
@@ -502,7 +509,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [Explicação das técnicas seguintes](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
-* [ ] **DNS resolution:** ![Baixa][low_img] DNS de serviços de terceiros que podem ser necessários são adiantadamente preparados durante tempo ocioso, usando `dns-prefetch`.
+* [ ] **Resolução DNS:** ![Baixa][low_img] DNS de serviços de terceiros que podem ser necessários são adiantadamente preparados durante tempo ocioso, usando `dns-prefetch`.
 
 ```html
 <link rel="dns-prefetch" href="https://example.com">
@@ -528,13 +535,14 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [Diferença entre prefetch e preload](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
 
-### Performance testing
+### Testes de Performance
 
 * [ ] **Google PageSpeed:** ![Alta][high_img] Todas suas páginas foram testadas (não só a homepage) e têm um score de pelo menos 90/100.
 
 > * 🛠 [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 > * 🛠 [Teste sua velocidade mobile com Google](https://testmysite.withgoogle.com)
 > * 🛠 [WebPagetest - Teste de Performance e Otimização de Website](https://www.webpagetest.org/)
+> * 🛠 [GTmetrix - Velocidade e otimização de performance de Website](https://gtmetrix.com/)
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -570,19 +578,19 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [Usando landmarks ARIA para identificar regiões de uma página](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
 > * 📖 [Categorização de roles ARIA](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
 
-### Semantics
+### Semântica
 
 - [ ] **Inputs HTML5 específicos são utilizados:** ![Média][medium_img] Isto é *especialmente* importante para **dispositivos mobile**, que mostram keypads e widgets customizados para diferentes tipos de input.
 
 > * 📖 [Tipos de Input Mobile](http://mobileinputtypes.com/)
 
-### Form
+### Formulários
 
 * [ ] **Label:** ![Alta][high_img] Uma label é associada a cada input de um formulário. Caso uma label não possa ser exibida, use `aria-label`.
 
 > * 📖 [Usando o atributo aria-label - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
-### Accessibility testing
+### Testes de Acessibilidade
 
 * [ ] **Testando padrões de Acessibilidade:** ![Alta][high_img] Use a ferramenta WAVE para testar se sua página respeita os padrões de acessibilidade.
 
@@ -622,7 +630,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ---
 
-## Translation
+## Traduções
 
 O Front-End Checklist também está disponível em outros idiomas. Obrigado a todos tradutores por seu incrível trabalho!
 
@@ -636,7 +644,7 @@ O Front-End Checklist também está disponível em outros idiomas. Obrigado a to
 
 ---
 
-## Front-End Checklist Badge
+## Badge da Front-End Checklist
 
 Se você quer mostrar que está seguindo as regras do Front-End Checklist, ponha esta badge no seu arquivo README!
 
