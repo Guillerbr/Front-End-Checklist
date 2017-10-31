@@ -287,7 +287,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff).
 > * 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff2).
 > * 📖 [TTF/OTF - Suporte a fonte TrueType e OpenType](https://caniuse.com/#feat=ttf)
-> * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
+> * 📖 [Usando @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
 * [ ] **Tamanho de webfont:** ![Alta][high_img] Tamanhos de webfont não excedem 2 MB (todas variantes inclusas).
 
