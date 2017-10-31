@@ -28,7 +28,7 @@ Ela é baseada em anos de experiência de desenvolvedores Front-End, com as adi�
 
 ## Como usar?
 
-Todos itens na **Front-End Checklist** são necesários na maioria dos projetos, mas alguns elementos podem ser omitidos ou não são tão essenciais (no caso da administração de um aplicativo web, você pode não precisar de um feed RSS por exemplo). Nós escolhemos três níveis de flexibilidade:
+Todos itens na **Front-End Checklist** são necessários na maioria dos projetos, mas alguns elementos podem ser omitidos ou não são tão essenciais (no caso da administração de um aplicativo web, você pode não precisar de um feed RSS por exemplo). Nós escolhemos três níveis de flexibilidade:
 
 * ![Baixa][low_img] significa que o item é **recomendado** mas pode ser omitido em algumas situações em particular.
 * ![Média][medium_img] significa que o item é **altamente recomendado** e pode eventualmente ser omitido em alguns casos realmente particulares. Alguns elementos, se omitidos, podem ter más repercussões em termos de performance ou SEO.
@@ -57,7 +57,7 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 
 > * 📖 [Determinando o encoding de caracteres - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-*A próximas 3 meta tags (Charset, X-UA Compatible e Viewport) precisam vir primeiro no head.*
+*As próximas 3 meta tags (Charset, X-UA Compatible e Viewport) precisam vir primeiro no head.*
 
 * [ ] **Charset:** ![Alta][high_img] O charset declarado (UTF-8) é corretamente declarado.
 
@@ -157,8 +157,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
 ```
 
-> * 📖 [Use URLs canonicas - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
-> * 📖 [5 erros comuns com rel=canonical - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
+> * 📖 [Use URLs canônicas - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
+> * 📖 [5 erros comuns com `rel=canonical` - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
 ### Tags HTML
 
@@ -178,10 +178,10 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-* [ ] **Idioma alternativo:** ![Baixa][low_img] A tag de idioma do seu website é especificada e relacionada ao idioma atual da página.
+* [ ] **Idioma alternativo:** ![Baixa][low_img] A tag de idioma alternativo do seu website é especificada e relacionada ao idioma atual da página.
 
 ```html
-<!-- Indicamos o idioma definido para a página atual -->
+<!-- Indicamos o idioma alternativo definido para a página atual -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 ```
 
@@ -191,11 +191,11 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **RSS feed:** ![Baixa][low_img] Se seu projeto é um blog ou possui artigos, foi providenciado o link do RSS.
 
-* [ ] **CSS Crítico inline:** ![Média][medium_img] CSS que estiliza conteúdo que é imediatamente visível durante arregamento de páginas (conteúdo "above the fold") é denominado "CSS Crítico. Ele é embutido antes da chamada CSS principal e entre `<style></style>` numa linha única (minificado).
+* [ ] **CSS Crítico inline:** ![Média][medium_img] CSS que estiliza conteúdo que é imediatamente visível durante carregamento de páginas (conteúdo "above the fold") é denominado "CSS Crítico. Ele é embutido antes da chamada CSS principal e entre `<style></style>` numa linha única (minificado).
 
 > * 🛠 [Critical por Addy Osmani no Github](https://github.com/addyosmani/critical)
 
-* [ ] **Ordem CSS:** ![Alta][high_img] Todos os arquivos CSS são carregados antes de quaisquer arquivos JavaScript files no `<head>`. (Exceto o caso onde, algumas vezes, arquivos JS são carregados assíncronamente no topo da página).
+* [ ] **Ordem CSS:** ![Alta][high_img] Todos os arquivos CSS são carregados antes de quaisquer arquivos JavaScript no `<head>` (Exceto no caso onde, algumas vezes, arquivos JS são carregados assíncronamente no topo da página).
 
 ### Social meta
 
@@ -203,7 +203,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Facebook Open Graph:** ![Baixa][low_img] Todos os Facebook Open Graph (OG) são testados e nenhum está faltando ou com informações falsas. Imagens precisam ter no mínimo 600 x 315 píxels, 1200 x 630 píxels recomendados.
 
-> **Notes:** Using use `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
+> **Notas:** Usar `og:image:width` e `og:image:height` vai especificar as dimensões da imagens para o _crawler_ para que ele renderize a imagem imediatamente sem ter que baixá-la e procesá-la assíncronamente.
 
 ```html
 <meta property="og:type" content="website">
@@ -245,13 +245,13 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ### Melhores práticas
 
-* [ ] **HTML5 Semantic Elements:** ![Alta][high_img] HTML5 Semantic Elements são usados apropriadamente (header, section, footer, main...).
+* [ ] **Elementos Semânticos do HTML5:** ![Alta][high_img] Elementos Semânticos do HTML5 são usados apropriadamente (header, section, footer, main...).
 
 > * 📖 [HTML Reference](http://htmlreference.io/)
 
-* [ ] **Páginas de erro:** ![Alta][high_img] Páginas para Error 404 e 5xx existem. Lembre-se de que páginas de erro 5xx precisam ter seu CSS integrado (sem chamadas externas no servidor atual).
+* [ ] **Páginas de erro:** ![Alta][high_img] Páginas para Erro 404 e 5xx existem. Lembre-se de que páginas de erro 5xx precisam ter seu CSS integrado (sem chamadas externas no servidor atual).
 
-* [ ] **Noopener:** ![Média][medium_img] Caso você esteja usando links externos com `target="_blank"`, seu link deveria ter um atributo `rel="noopener"` para prevenir tab nabbing. Se você precisa suportar versões mais antigas do Firefox, use `rel="noopener noreferrer"`.
+* [ ] **Noopener:** ![Média][medium_img] Caso você esteja usando links externos com `target="_blank"`, seu link deveria ter um atributo `rel="noopener"` para prevenir _tab nabbing_. Se você precisa suportar versões mais antigas do Firefox, use `rel="noopener noreferrer"`.
 
 > * 📖 [Sobre rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
@@ -305,7 +305,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Web Design Responsivo:** ![Alta][high_img] O website está usando web design responsivo.
 * [ ] **CSS Print:** ![Média][medium_img] Uma stylesheet de impressão correta é providenciada em cada página.
-* [ ] **Preprocessors:** ![Média][medium_img] Sua página está usando um preprocessor CSS (preferencialmente [Sass](http://sass-lang.com/)).
+* [ ] **Pré-processadores:** ![Média][medium_img] Sua página está usando um pré-processador CSS (preferencialmente [Sass](http://sass-lang.com/)).
 * [ ] **Unique ID:** ![Alta][high_img] Se IDs são usados, eles são únicos à página.
 * [ ] **Reset CSS:** ![Alta][high_img] Um CSS reset (reset, normalize ou reboot) está em uso e atualizado. *(Se você está usando um Framework CSS como Bootstrap ou Foundation, o Normalize já está incluído.)*
 
@@ -316,9 +316,9 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **JS prefix:** ![Baixa][low_img] Todas as classes (ou id- usados em arquivos) começam com **js-** e não estão estilizadas nos arquivos CSS.
 
 ```html
-<div id="js-slider" class="my-slider">
+<div id="js-slider" class="meu-slider">
 <!-- ou -->
-<div id="id-used-by-cms" class="js-slider my-slider">
+<div id="id-usado-pelo-cms" class="js-slider meu-slider">
 ```
 
 * [ ] **CSS embed ou line:** ![Alta][high_img] Evite a todo custo o uso de CSS embutido em tags `<style>` ou inline: apenas utilizado por razões válidas (ex: background-image para slider, CSS critical).
@@ -328,45 +328,45 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ### Performance
 
-- [ ] **Concatenation:** ![Alta][high_img] Arquivos CSS são concatenados num arquivo único. *(Não para HTTP/2)*
-- [ ] **Minification:** ![Alta][high_img] Todos arquivos CSS são minificados.
+- [ ] **Concatenação:** ![Alta][high_img] Arquivos CSS são concatenados num arquivo único. *(Não para HTTP/2)*
+- [ ] **Minificação:** ![Alta][high_img] Todos arquivos CSS são minificados.
 - [ ] **Non-blocking:** ![Média][medium_img] Arquivos CSS precisam ser non-blocking para prevenir o DOM de tirar tempo para carregar.
 
-> * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
-> * 📖 [Example of preload CSS usando loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
+> * 📖 [loadCSS por grupo de filamento](https://github.com/filamentgroup/loadCSS)
+> * 📖 [Exemplo de pré-carregamento de CSS usando loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
 - [ ] **Unused CSS:** ![Baixa][low_img] Remover CSS inutilizado.
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/) 🛠
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
-> * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
+> * 🛠 [Cobertura do DevTools do Chrome](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
 
 ### CSS testing
 
 * [ ] **Stylelint:** ![Alta][high_img] Todos arquivos CSS ou SCSS estão sem nenhum erros.
 
-> * 🛠 [stylelint, a CSS linter](https://stylelint.io/)
-> * 📖 [Sass guidelines](https://sass-guidelin.es/)
+> * 🛠 [stylelint, um linter CSS](https://stylelint.io/)
+> * 📖 [Diretrizes Sass](https://sass-guidelin.es/)
 
-* [ ] **Responsive web design:** ![Alta][high_img] Todas as páginas foram testatas nos seguintes breakpoints: 320px, 768px, 1024px (podem ser mais / diferentes de acordo com seu analytics).
+* [ ] **Web design responsivo:** ![Alta][high_img] Todas as páginas foram testatas nos seguintes breakpoints: 320px, 768px, 1024px (podem ser mais / diferentes de acordo com seu analytics).
 
-* [ ] **CSS Validator:** ![Média][medium_img] O CSS foi testado e erros pertinentes foram corrigidos.
+* [ ] **Validador CSS:** ![Média][medium_img] O CSS foi testado e erros pertinentes foram corrigidos.
 
-> * 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/)
+> * 🛠 [Validador CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 * [ ] **Navegadores Desktop:** ![High][high_img] Todas as páginas foram testadas em todos os navegadores desktop atuais (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
-* [ ] **Navegadores Mobile:**  ![High][high_img] Todas as páginas foram testadas em todos os navegadores mobile atuais (Native browser, Chrome, Safari...).
+* [ ] **Navegadores Mobile:**  ![High][high_img] Todas as páginas foram testadas em todos os navegadores mobile atuais (Browser nativo, Chrome, Safari...).
 * [ ] **SO:**  ![High][high_img] Todas as páginas foram testadas em todos os Sistemas Operacionais atuais (Windows, Android, iOS, Mac...).
 
-- [ ] **Pixel perfect:** ![High][high_img] Páginas estão alinhadas com o que foi desenhado. Dependendo na qualidade dos profissionais da área criativa, pode não ser 100% exato, mas sua página precisa estar próxima ao seu template.
+- [ ] **Pixel perfect:** ![High][high_img] As páginas estão alinhadas com o que foi desenhado. Dependendo na qualidade dos profissionais da área criativa, pode não ser 100% exato, mas sua página precisa estar próxima ao seu template.
 
 > [Pixel Perfect - Extensão Chrome](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
 * [ ] **Direção de leitura:** ![High][high_img] Todas as páginas precisam ser testadas para idiomas LTR e RTL se elas precisarem dar esse suporte.
 
-> * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
-> * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
+> * 📖 [Construindo Websites e Web Apps Adaptados a RTL: Parte 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
+> * 📖 [Construindo Websites e Web Apps Adaptados a RTL: Parte 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -378,7 +378,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ### Melhores práticas
 
-* [ ] **Optimization:** ![Alta][high_img] Todas as imagens são otimizadas para renderização no navegador. Formato WebP poderia ser usado para páginas críticas (como a Homepage).
+* [ ] **Otimização:** ![Alta][high_img] Todas as imagens são otimizadas para renderização no navegador. Formato WebP poderia ser usado para páginas críticas (como a Homepage).
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 Use [ImageOptim](https://imageoptim.com/) para otimizar suas imagens gratuitamente.
@@ -390,12 +390,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Retina:** ![Baixa][low_img] Você providencia imagens em layout x2 ou 3x, e suporta retina display.
 * [ ] **Sprite:** ![Média][medium_img] Imagens pequenas estão num arquivo sprite (no caso de ícones, eles podem estar num sprite SVG).
-* [ ] **Width e Height:** ![Alta][high_img] Determine os atributos `width` e `height` em `<img>` se a imagem final renderizada é conhecida (pode ser omitido para CSS sizing).
+* [ ] **Altura e Largura:** ![Alta][high_img] Determine os atributos `width` e `height` em `<img>` se a imagem final renderizada é conhecida (pode ser omitido para CSS sizing).
 * [ ] **Texto alternativo:** ![High][high_img] Todas as tags `<img>` têm um texto alternativo que descreve a imagem visualmente.
-
-> ***Nota:*** Vários desenvolvedores assumem que altura e largura não são compatíveis com design web responsivo. Absolutamente não é o caso.
-
-* [ ] **Texto alternativo:** ![Alta][high_img] Todas tags `<img>` têm um texto alternativo que as descreve visualmente.
 * [ ] **Lazy loading:** ![Média][medium_img] Imagens são lazyloaded (Um noscript fallback é sempre providenciado).
 
 **[⬆ voltar ao topo](#Índice)**
@@ -407,24 +403,24 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 ### Melhores práticas
 
 * [ ] **JavaScript Inline:** ![Alta][high_img] Você não tem nenhum código JavaSScript inline (misturado com seu código HTML, por exemplo).
-* [ ] **Concatenation:** ![Alta][high_img] Arquivos JavaScript são concatenados.
-* [ ] **Minification:** ![Alta][high_img] Arquivos JavaScript são minificados (você pode adicionar o sufixo `.min`).
+* [ ] **Concatenação:** ![Alta][high_img] Arquivos JavaScript são concatenados.
+* [ ] **Minificação:** ![Alta][high_img] Arquivos JavaScript são minificados (você pode adicionar o sufixo `.min`).
 
 > * 📖 [Minificar Recursos (HTML, CSS, e JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
 
-* [ ] **JavaScript security:**
+* [ ] **Segurança JavaScript:**
 
-> * 📖 [Guidelines for Developing Secure Applications Utilizing JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
+> * 📖 [Diretrizes do Desenvolvimento de Aplicações Seguras Utilizando JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
 
 * [ ] **Non-blocking:** ![Média][medium_img] Arquivos JavaScript são carregados assíncronamente usando atributo `async` ou deferidos usando atributo `defer`.
 
-> * 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
+> * 📖 [Removendo Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
 
 * [ ] **Modernizr:** ![Baixa][low_img] Se você precisa visar features específicas, é possível usar um Modernizr custom para adicionar classes na sua tag `<html>`.
 
 > * 🛠 [Customize seu Modernizr](https://modernizr.com/download?setclasses)
 
-### JavaScript testing
+### Validação JavaScript
 
 * [ ] **ESLint:** ![Alta][high_img] Nenhum erro é visível pelo ESLint (baseando-se nas sua configuração ou regras pré-estabelecidas).
 
@@ -447,14 +443,14 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **HTTPS:** ![Média][medium_img] HTTPS é usado em todas as páginas e para todo conteúdo externo (plugins, imagens...).
 
 > * 🛠 [Let's Encrypt - Free SSL/TLS Certificates](https://letsencrypt.org/)
-> * 🛠 [Free SSL Server Test](https://www.ssllabs.com/ssltest/index.html)
+> * 🛠 [Teste SSL Server Gratuito](https://www.ssllabs.com/ssltest/index.html)
 > * 📖 [Strict Transport Security](http://caniuse.com/#feat=stricttransportsecurity)
 
 * [ ] **HTTP Strict Transport Security (HSTS):** ![Média][medium_img] O header HTTP está configurado com 'Strict-Transport-Security'.
 
-> * 🛠 [Check HSTS preload status and eligibility](https://hstspreload.org/)
-> * 📖 [HTTP Strict Transport Security Cheat Sheet - OWASP](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet)
-> * 📖 [Transport Layer Protection Cheat Sheet - OWASP](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
+> * 🛠 [Cheque o status e a eligibilidade de pré-carregamento HSTS](https://hstspreload.org/)
+> * 📖 [Cheat Sheet para Strict Transport Security HTTP - OWASP](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet)
+> * 📖 [Cheat Sheet para Proteção na Camada de Transporte - OWASP](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
 
 * [ ] **Cross Site Request Forgery (CSRF):** ![Alta][high_img] Você certifica requests feitas pro seu server-side são legítimas e originadas do seu website / app para prevenir ataques CSRF.
 
@@ -482,27 +478,27 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ### Melhores práticas
 
-- [ ] **Weight page:** ![Alta][high_img] O peso de cada página está entre 0 e 500 KB.
+- [ ] **Peso por página:** ![Alta][high_img] O peso de cada página está entre 0 e 500 KB.
 
 > * 🛠 [Website Page Analysis](https://tools.pingdom.com)
 > * 📖 [Size Limit: Make the Web lighter](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
-- [ ] **Minified:** ![Média][medium_img] Seu HTML está minificado.
+- [ ] **Minificado:** ![Média][medium_img] Seu HTML está minificado.
 > * 🛠 [W3C Validator](https://validator.w3.org/)
 
 * [ ] **Lazy loading:** ![Média][medium_img] Imagens, scripts e CSS precisam ser carregados de modo lazy para melhorar o tempo de resposta da página atual (Veja detalhes nas seções respectivas).
 
-* [ ] **Cookie size:** Se você está usando cookies, certifique-se de que cada não excede 4096 bytes e que seu domain name não tem mais de 20 cookies.
+* [ ] **Tamanho dos Cookies:** Se você está usando cookies, certifique-se de que cada não excede 4096 bytes e que seu domain name não tem mais de 20 cookies.
 
-> * 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
+> * 📖 [Especificação de Cookies: RFC 6265](https://tools.ietf.org/html/rfc6265)
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
-> * 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
+> * 🛠 [Limites de Cookie por Browser](http://browsercookielimits.squawky.net/)
 
-* [ ] **Componentes de terceiros:** ![Medium][medium_img] Iframes ou componentes de terceiros ("third party") que dependam em JavaScript externo (como botões de compartilhamento) são substituidos por componentes estáticos quando possível, assim limitando chamadas a APIs externas, e mantendo privadas as atividades de seus usuários.
+* [ ] **Componentes de terceiros:** ![Medium][medium_img] Iframes ou componentes de terceiros que dependam em JavaScript externo (como botões de compartilhamento) são substituidos por componentes estáticos quando possível, assim limitando chamadas a APIs externas, e mantendo privadas as atividades de seus usuários.
 
 > * 🛠 [Gerador botões de compartilhamento simples](https://simplesharingbuttons.com/)
 
-### Preparing upcoming requests
+### Preparando requisições a caminho
 
 > * 📖 [Explicação das técnicas seguintes](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
@@ -552,7 +548,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 - [ ] **Melhoramento progressivo:** ![Média][medium_img] Funcionalidades extensivas como a navegação principal e busca deveriam funcionar sem JavaScript habilitado.
 
-> * 📖 [Habilitar / Desabiloitar JavaScript no Chrome Developer Tools](https://www.youtube.com/watch?v=kBmvq2cE0D8)
+> * 📖 [Habilitar / Desabilitar JavaScript no Chrome Developer Tools](https://www.youtube.com/watch?v=kBmvq2cE0D8)
 
 - [ ] **Contraste de cor:** ![Média][medium_img] Contraste de cores deveria pelo menos passar WCAG AA (AAA para mobile).
 
@@ -567,18 +563,18 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 #### Landmarks
 
-- [ ] **Role banner:** ![Alta][high_img] `<header>` tem `role="banner"`.
-- [ ] **Role navigation:** ![Alta][high_img] `<nav>` tem `role="navigation"`.
-- [ ] **Role main:** ![Alta][high_img] `<main>` tem `role="main"`.
+- [ ] **Banner role:** ![Alta][high_img] `<header>` tem `role="banner"`.
+- [ ] **Navigation role:** ![Alta][high_img] `<nav>` tem `role="navigation"`.
+- [ ] **Main role:** ![Alta][high_img] `<main>` tem `role="main"`.
 
 > * 📖 [Usando landmarks ARIA para identificar regiões de uma página](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
 > * 📖 [Categorização de roles ARIA](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
 
 ### Semantics
 
-- [ ] **Inputs HTML5 específicos são utilizados:** ![Média][medium_img] Isto é *especialmente* importante para **devices mobile**, que mostram keypads e widgets customizados para diferentes tipos de input.
+- [ ] **Inputs HTML5 específicos são utilizados:** ![Média][medium_img] Isto é *especialmente* importante para **dispositivos mobile**, que mostram keypads e widgets customizados para diferentes tipos de input.
 
-> * 📖 [Mobile Input Types](http://mobileinputtypes.com/)
+> * 📖 [Tipos de Input Mobile](http://mobileinputtypes.com/)
 
 ### Form
 
@@ -596,7 +592,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Screen-reader:** ![Média][medium_img] Todas as páginas foram testadas num screen-reader (VoiceOver, ChromeVox, NVDA ou Lynx).
 * [ ] **Estilo de Foco:** ![Alta][high_img] Se o foco está desabilitado, ele é substituído por um estado visível em CSS.
 
-> * 📹 [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+> * 📹 [Gerenciando Foco - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
 **[⬆ voltar ao topo](#Índice)**
 
