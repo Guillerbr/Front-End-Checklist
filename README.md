@@ -235,7 +235,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 ```
 
 > * 📖 [Iniciando com cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
-> * 🛠 Teste sua página com o [Twitter card validator](https://cards-dev.twitter.com/validator)
+> * 🛠 Teste sua página com o [Validador de Twitter cards](https://cards-dev.twitter.com/validator)
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -353,7 +353,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Validador CSS:** ![Média][medium_img] O CSS foi testado e erros pertinentes foram corrigidos.
 
-> * 🛠 [Validador CSS Validator](https://jigsaw.w3.org/css-validator/)
+> * 🛠 [Validador CSS](https://jigsaw.w3.org/css-validator/)
 
 * [ ] **Navegadores Desktop:** ![High][high_img] Todas as páginas foram testadas em todos os navegadores desktop atuais (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
 * [ ] **Navegadores Mobile:**  ![High][high_img] Todas as páginas foram testadas em todos os navegadores mobile atuais (Browser nativo, Chrome, Safari...).
@@ -484,7 +484,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [Size Limit: Make the Web lighter](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
 - [ ] **Minificado:** ![Média][medium_img] Seu HTML está minificado.
-> * 🛠 [W3C Validator](https://validator.w3.org/)
+> * 🛠 [Validador W3C](https://validator.w3.org/)
 
 * [ ] **Lazy loading:** ![Média][medium_img] Imagens, scripts e CSS precisam ser carregados de modo lazy para melhorar o tempo de resposta da página atual (Veja detalhes nas seções respectivas).
 
