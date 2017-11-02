@@ -105,9 +105,9 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 
 ```html
 <!-- Favicon padrão -->
-<link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://exemplo.com/favicon.ico">
 <!-- Formato favicon recomendado -->
-<link rel="icon" type="image/png" href="https://example.com/favicon.png">
+<link rel="icon" type="image/png" href="https://exemplo.com/favicon.png">
 ```
 
 > * 🛠 [Gerador de Favicon](https://www.favicon-generator.org/)
@@ -154,7 +154,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ```html
 <!-- Ajuda a evitar problemas com conteúdo duplicado -->
-<link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
+<link rel="canonical" href="http://exemplo.com/2017/09/um-novo-artigo-para-ler.html">
 ```
 
 > * 📖 [Use URLs canônicas - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
@@ -182,7 +182,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ```html
 <!-- Indicamos o idioma alternativo definido para a página atual -->
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
+<link rel="alternate" href="https://es.exemplo.com/" hreflang="es">
 ```
 
 * [ ] **Comentários condicionais:** ![Baixa][low_img] Comentários condicionais são presentes para o IE se necessário.
@@ -202,17 +202,17 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Facebook Open Graph:** ![Baixa][low_img] Todos os Facebook Open Graph (OG) são testados e nenhum está faltando ou com informações falsas. Imagens precisam ter no mínimo 600 x 315 píxels, 1200 x 630 píxels recomendados.
 
-> **Notas:** Usar `og:image:width` e `og:image:height` vai especificar as dimensões da imagens para o _crawler_ para que ele renderize a imagem imediatamente sem ter que baixá-la e procesá-la assíncronamente.
+> **Notas:** Usar `og:image:width` e `og:image:height` vai especificar as dimensões da imagens para o _crawler_ para que ele renderize a imagem imediatamente sem ter que baixá-la e processá-la assíncronamente.
 
 ```html
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://example.com/page.html">
-<meta property="og:title" content="Content Title">
-<meta property="og:image" content="https://example.com/image.jpg">
-<meta property="og:description" content="Description Here">
-<meta property="og:site_name" content="Site Name">
-<meta property="og:locale" content="en_US">
-<!-- Next tags are optional but recommended -->
+<meta property="og:url" content="https://exemplo.com/pagina.html">
+<meta property="og:title" content="Título do Conteúdo">
+<meta property="og:image" content="https://exemplo.com/image.jpg">
+<meta property="og:description" content="Descrição Aqui">
+<meta property="og:site_name" content="Nome do Site">
+<meta property="og:locale" content="pt_BR">
+<!-- As próximas tags são opcionais mas recomendadas -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 ```
@@ -224,13 +224,13 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Twitter Card:** ![Baixa][low_img]
 
 ```html
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@site_account">
-<meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="https://example.com/page.html">
-<meta name="twitter:title" content="Content Title">
+<meta name="twitter:card" content="sumário">
+<meta name="twitter:site" content="@conta_do_site">
+<meta name="twitter:creator" content="@conta_individual">
+<meta name="twitter:url" content="https://exemplo.com/pagina.html">
+<meta name="twitter:title" content="Título do Conteúdo">
 <meta name="twitter:description" content="Descrição de conteúdo com menos de caracteres">
-<meta name="twitter:image" content="https://example.com/image.jpg">
+<meta name="twitter:image" content="https://exemplo.com/imagem.jpg">
 ```
 
 > * 📖 [Iniciando com cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
@@ -336,7 +336,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [loadCSS por grupo de filamento](https://github.com/filamentgroup/loadCSS)
 > * 📖 [Exemplo de pré-carregamento de CSS usando loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
-- [ ] **Unused CSS:** ![Baixa][low_img] Remover CSS inutilizado.
+- [ ] **CSS Inutilizado:** ![Baixa][low_img] Remover CSS inutilizado.
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/) 🛠
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
@@ -437,13 +437,13 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * [securityheaders.io](https://securityheaders.io/)
 > * [Observatory por Mozilla](https://observatory.mozilla.org/)
-> * [ASafaWeb - Automated Security Analyser for ASP.NET Websites](https://asafaweb.com/)
+> * [ASafaWeb - Analisador de Segurança Automatizado para Websites ASP.NET](https://asafaweb.com/)
 
 ### Melhores práticas
 
 * [ ] **HTTPS:** ![Média][medium_img] HTTPS é usado em todas as páginas e para todo conteúdo externo (plugins, imagens...).
 
-> * 🛠 [Let's Encrypt - Free SSL/TLS Certificates](https://letsencrypt.org/)
+> * 🛠 [Let's Encrypt - Certificados SSL/TLS Gratuitos](https://letsencrypt.org/)
 > * 🛠 [Teste SSL Server Gratuito](https://www.ssllabs.com/ssltest/index.html)
 > * 📖 [Strict Transport Security](http://caniuse.com/#feat=stricttransportsecurity)
 
@@ -512,13 +512,13 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Resolução DNS:** ![Baixa][low_img] DNS de serviços de terceiros que podem ser necessários são adiantadamente preparados durante tempo ocioso, usando `dns-prefetch`.
 
 ```html
-<link rel="dns-prefetch" href="https://example.com">
+<link rel="dns-prefetch" href="https://exemplo.com">
 ```
 
 * [ ] **Preconnection:** ![Baixa][low_img] DNS lookup, TCP handshake e negociação TLS com serviços que serão necessários em breve, são ambos feitos adiantadamente durante tempo ocioso, usando `preconnect`.
 
 ```html
-<link rel="preconnect" href="https://example.com">
+<link rel="preconnect" href="https://exemplo.com">
 ```
 
 * [ ] **Prefetching:** ![Baixa][low_img] Recursos que serão necessários em breve (ex.: imagens em lazy loading) são requisitados adiantadamente durante tempo ocioso, usando `prefetch`.
@@ -613,7 +613,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **sitemap.xml:** ![Alta][high_img] Um sitemap.xml existe e foi submetido ao Google Search Console (anteriormente Google Webmaster Tools).
 * [ ] **robots.txt:** ![Alta][high_img] O robots.txt não está bloqueando webpages.
 
-> * 🛠 Test seu robots.txt com [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
+> * 🛠 Teste seu robots.txt com [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
 
 * [ ] **Dados Estruturados:** ![Alta][high_img] Páginas usando dados estruturados são testadas e não possuem erros. Dados estruturados ajudam crawlers a entender o conteúdo da página atual.
 
@@ -639,6 +639,7 @@ O Front-End Checklist também está disponível em outros idiomas. Obrigado a to
 * 🇪🇸 Espanhol: [eoasakura/Front-End-Checklist-ES](https://github.com/eoasakura/Front-End-Checklist-ES)
 * 🇨🇳 Chinês: [JohnsenZhou/Front-End-Checklist](https://github.com/JohnsenZhou/Front-End-Checklist)
 * 🇰🇷 Coreano: [kesuskim/Front-End-Checklist](https://github.com/kesuskim/Front-End-Checklist)
+* 🇧🇷 Português: [jcezarms/Front-End-Checklist](https://github.com/jcezarms/Front-End-Checklist)
 * 🇻🇳 Vietnamita: [euclid1990/Front-End-Checklist](https://github.com/euclid1990/Front-End-Checklist)
 * 🇹🇼 Chinês Tradicional: [EngineLin/Front-End-Checklist](https://github.com/EngineLin/Front-End-Checklist)
 
