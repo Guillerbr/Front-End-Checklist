@@ -208,7 +208,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://exemplo.com/pagina.html">
 <meta property="og:title" content="Título do Conteúdo">
-<meta property="og:image" content="https://exemplo.com/image.jpg">
+<meta property="og:image" content="https://exemplo.com/imagem.jpg">
 <meta property="og:description" content="Descrição Aqui">
 <meta property="og:site_name" content="Nome do Site">
 <meta property="og:locale" content="pt_BR">
@@ -307,7 +307,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Web Design Responsivo:** ![Alta][high_img] O website está usando web design responsivo.
 * [ ] **CSS Print:** ![Média][medium_img] Uma stylesheet de impressão correta é providenciada em cada página.
 * [ ] **Pré-processadores:** ![Média][medium_img] Sua página está usando um pré-processador CSS (preferencialmente [Sass](http://sass-lang.com/)).
-* [ ] **Unique ID:** ![Alta][high_img] Se IDs são usados, eles são únicos à página.
+* [ ] **ID Único:** ![Alta][high_img] Se IDs são usados, eles são únicos à página.
 * [ ] **Reset CSS:** ![Alta][high_img] Um CSS reset (reset, normalize ou reboot) está em uso e atualizado. *(Se você está usando um Framework CSS como Bootstrap ou Foundation, o Normalize já está incluído.)*
 
 > * 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
@@ -343,7 +343,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 🛠 [Cobertura do DevTools do Chrome](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
 
-### CSS testing
+### Validação CSS
 
 * [ ] **Stylelint:** ![Alta][high_img] Todos arquivos CSS ou SCSS estão sem nenhum erros.
 
@@ -613,7 +613,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **sitemap.xml:** ![Alta][high_img] Um sitemap.xml existe e foi submetido ao Google Search Console (anteriormente Google Webmaster Tools).
 * [ ] **robots.txt:** ![Alta][high_img] O robots.txt não está bloqueando webpages.
 
-> * 🛠 Teste seu robots.txt com [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
+> * 🛠 Teste seu robots.txt com o [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
 
 * [ ] **Dados Estruturados:** ![Alta][high_img] Páginas usando dados estruturados são testadas e não possuem erros. Dados estruturados ajudam crawlers a entender o conteúdo da página atual.
 
