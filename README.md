@@ -642,6 +642,7 @@ O Front-End Checklist também está disponível em outros idiomas. Obrigado a to
 * 🇧🇷 Português: [jcezarms/Front-End-Checklist](https://github.com/jcezarms/Front-End-Checklist)
 * 🇻🇳 Vietnamita: [euclid1990/Front-End-Checklist](https://github.com/euclid1990/Front-End-Checklist)
 * 🇹🇼 Chinês Tradicional: [EngineLin/Front-End-Checklist](https://github.com/EngineLin/Front-End-Checklist)
+* 🇫🇷 Francês: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
 
 ---
 
