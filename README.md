@@ -139,10 +139,10 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <browserconfig>
    <msapplication>
      <tile>
-        <square70x70logo src="small.png"/>
-        <square150x150logo src="medium.png"/>
-        <wide310x150logo src="wide.png"/>
-        <square310x310logo src="large.png"/>
+        <square70x70logo src="pequeno.png"/>
+        <square150x150logo src="medio.png"/>
+        <wide310x150logo src="largo.png"/>
+        <square310x310logo src="grande.png"/>
      </tile>
    </msapplication>
 </browserconfig>
