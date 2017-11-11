@@ -410,7 +410,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [Minificar Recursos (HTML, CSS, e JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
 
-* [ ] **Segurança JavaScript:**
+* [ ] **Segurança JavaScript:** ![High][high_img]
 
 > * 📖 [Diretrizes do Desenvolvimento de Aplicações Seguras Utilizando JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
 
@@ -495,7 +495,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Lazy loading:** ![Média][medium_img] Imagens, scripts e CSS precisam ser carregados de modo lazy para melhorar o tempo de resposta da página atual (Veja detalhes nas seções respectivas).
 
-* [ ] **Tamanho dos Cookies:** Se você está usando cookies, certifique-se de que cada não excede 4096 bytes e que seu domain name não tem mais de 20 cookies.
+* [ ] **Tamanho dos Cookies:** ![Medium][medium_img] Se você está usando cookies, certifique-se de que cada cookie não excede 4096 bytes e que seu _domain name_ não tem mais de 20 cookies.
 
 > * 📖 [Especificação de Cookies: RFC 6265](https://tools.ietf.org/html/rfc6265)
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
