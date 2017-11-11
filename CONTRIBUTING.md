@@ -1,57 +1,57 @@
-# Contribute
+# Contribua
 
-## Introduction
+## Introdução
 
-First, thank you for considering contributing to front-end-checklist! It's people like you that make the open source community such a great community! 😊
+Primeiramente, obrigado por considerar contribuir à front-end-checklist! São pessoas como você que ajudam a tornar a comunidade open source uma comunidade tão incrível! 😊
 
-We welcome any type of contribution, not only code. You can help with 
-- **QA**: file bug reports, the more details you can give the better (e.g. screenshots with the console open)
-- **Marketing**: writing blog posts, howto's, printing stickers, ...
-- **Community**: presenting the project at meetups, organizing a dedicated meetup for the local community, ...
-- **Code**: take a look at the [open issues](issues). Even if you can't write code, commenting on them, showing that you care about a given issue matters. It helps us triage them.
-- **Money**: we welcome financial contributions in full transparency on our [open collective](https://opencollective.com/front-end-checklist).
+Nós aceitamos qualquer tipo de contribuição, não apenas código. Você pode ajudar com
+- **QA**: reportando bugs - quanto mais detalhes você puder dar, melhor (e.g. capturas de tela com o console aberto)
+- **Marketing**: escrevendo posts em blogs, tutoriais, imprimindo adesivos, ...
+- **Comunidade**: apresentando o projeto em eventos, organizando um evento específico para a comunidade local, ...
+- **Código**: dê uma olhada nas [_issues_ abertas](issues). Mesmo que você não possa codificar, comente nos códigos - mostrar que você se preocupa sobre uma determinada issue importa. Isso nos ajuda na triagem.
+- **Dinheiro**: nós acolhemos contribuições financeiras em transparência total na nossa [coletiva aberta](https://opencollective.com/front-end-checklist).
 
-## Your First Contribution
+## Sua Primeira Contribuição
 
-Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
+Trabalhando na sua primeira Pull Request? Você pode ver como fazê-lo a partir desta série *gratuita* de tutoriais, [Como Contribuir num Projeto Open Source Project no GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
 
-## Submitting code
+## Submetendo Código
 
-Any code change should be submitted as a pull request. The description should explain what the code does and give steps to execute it. The pull request should also contain tests.
+Qualquer mudança de código deve ser submetida como uma pull request. A descrição deve explicar o que o código faz e informar os passos para executá-lo. A pull request deveria também conter testes.
 
-## Code review process
+## Processo de análise de código
 
-The bigger the pull request, the longer it will take to review and merge. Try to break down large pull requests in smaller chunks that are easier to review and merge.
-It is also always helpful to have some context for your pull request. What was the purpose? Why does it matter to you?
+Quanto maior a pull request, mais tempo será necessário para revisá-la e realizar o merge. Tente quebrar pull requests grandes em pedaços menores que sejam mais fáceis de análisar e fazer merge.
+Também é sempre útil ter algum contexto para a sua pull request. Qual era o objetivo dela? Por que ela importa para você?
 
-## Financial contributions
+## Contribuições financeiras
 
-We also welcome financial contributions in full transparency on our [open collective](https://opencollective.com/front-end-checklist).
-Anyone can file an expense. If the expense makes sense for the development of the community, it will be "merged" in the ledger of our open collective by the core contributors and the person who filed the expense will be reimbursed.
+Nós também acolhemos contribuições financeiras em total transparência na nossa [coletiva aberta](https://opencollective.com/front-end-checklist).
+Qualquer pessoa pode fichar uma despesa. Se a despesa fizer sentido para o desenvolvimento da comunidade, ela será "fundida" no registro de nossa coletiva aberta pelo nosso núcleo de constribuidores e a pessoa que fichou a despesa será reembolsada.
 
-## Questions
+## Perguntas
 
-If you have any questions, create an [issue](issue) (protip: do a quick search first to see if someone else didn't ask the same question before!).
-You can also reach us at hello@front-end-checklist.opencollective.com.
+Se você tiver qualquer pergunta, crie uma [issue](issue) (_protip_: faça uma busca rápida para ver se alguém já não fez a mesma pergunta antes!).
+Você também pode nos contatar em hello@front-end-checklist.opencollective.com.
 
-## Credits
+## Créditos
 
-### Contributors
+### Contribuidores
 
-Thank you to all the people who have already contributed to front-end-checklist!
+Obrigado a todas as pessoas que já contribuiram à front-end-checklist!
 <a href="graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
 
 
-### Backers
+### Apoiadores
 
-Thank you to all our backers! [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
+Obrigado a todos os nossos apoiadores! [[Torne-se um apoiador](https://opencollective.com/front-end-checklist#backer)]
 
 <a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890"></a>
 
 
-### Sponsors
+### Patrocinadores
 
-Thank you to all our sponsors! (please ask your company to also support this open source project by [becoming a sponsor](https://opencollective.com/front-end-checklist#sponsor))
+Obrigado a todos nossos patrocinadores! (por favor peça a sua empresa a também dar suporte a este projeto open source [tornando-se uma patrocinadora](https://opencollective.com/front-end-checklist#sponsor))
 
 <a href="https://opencollective.com/front-end-checklist/sponsor/0/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/1/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg"></a>
