@@ -39,7 +39,7 @@ Você também pode nos contatar em hello@front-end-checklist.opencollective.com.
 ### Contribuidores
 
 Obrigado a todas as pessoas que já contribuiram à front-end-checklist!
-<a href="graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
+<a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
 
 
 ### Apoiadores

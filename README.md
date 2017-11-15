@@ -11,9 +11,6 @@ A **Front-End Checklist** é uma lista exaustiva de todos elementos que você pr
 
 Ela é baseada em anos de experiência de desenvolvedores Front-End, com as adições provenientes de outras checklists open-source.
 
-*Ajude a compartilhar a Front-End Checklist votando e recomendando-a no Product Hunt*
-[![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
-
 ## Índice
 
 1. **[Head](#head)**
@@ -647,6 +644,7 @@ O Front-End Checklist também está disponível em outros idiomas. Obrigado a to
 * 🇹🇼 Chinês Tradicional: [EngineLin/Front-End-Checklist](https://github.com/EngineLin/Front-End-Checklist)
 * 🇫🇷 Francês: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
 * 🇷🇺 Russo: [ungear/Front-End-Checklist](https://github.com/ungear/Front-End-Checklist)
+* 🇹🇷 Turco: [erdoganoksuz/Front-End-Checklist](https://github.com/erdoganoksuz/Front-End-Checklist)
 
 ---
 
@@ -695,7 +693,7 @@ Se você tem alguma pergunta ou sugestão, não hesite em usar o Gitter ou Twitt
 ## Contribuidores
 
 Este projeto existe graças a todas as pessoas que contribuem. [[Contribua]](CONTRIBUTING.md).
-<a href="graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
+<a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
 
 
 ## Apoiadores
@@ -728,6 +726,6 @@ Suporte este projeto tornando-se um patrocinador. Seu logo irá aparecer aqui co
 
 **[⬆ voltar ao topo](#Índice)**
 
-[low_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-low.png
-[medium_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-medium.png
-[high_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-high.png
+[low_img]: https://front-end-checklist.now.sh/low.svg
+[medium_img]: https://front-end-checklist.now.sh/medium.svg
+[high_img]: https://front-end-checklist.now.sh/high.svg
