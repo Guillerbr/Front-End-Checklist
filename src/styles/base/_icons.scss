@@ -2,7 +2,7 @@
   width: 18px;
   height: 18px;
   transition: all 200ms ease-in 0s;
-  fill: map-get($shades, grey-lighter);
+  fill: map-get($colors, grey-light);
   display: inline-block;
   text-align: center;
   speak: none;
@@ -25,6 +25,18 @@ button,
 .icon--small {
   width: 7px;
   height: 7px;
+}
+
+.icon-checkbox {
+  .path-check {
+    display: none;
+  }
+}
+
+.icon-uncheck {
+  .path-check {
+    display: none;
+  }
 }
 
 .icon-checkbox,
@@ -81,9 +93,8 @@ button,
     fill: #f85f5f;
     align-self: flex-start;
     display: block;
-    margin-top: 1px;
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
 
     @include mq(lap-and-up) {
       margin-top: 0;
@@ -96,9 +107,8 @@ button,
     fill: #f2c741;
     align-self: flex-start;
     display: block;
-    margin-top: 1px;
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
 
     @include mq(lap-and-up) {
       margin-top: 0;
@@ -111,9 +121,8 @@ button,
     fill: #62c547;
     align-self: flex-start;
     display: block;
-    margin-top: 1px;
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
 
     @include mq(lap-and-up) {
       margin-top: 0;
@@ -202,26 +211,22 @@ button,
 }
 
 .icon-eye {
-  path:nth-child(3),
-  path:nth-child(4) {
+  path:nth-child(2),
+  path:nth-child(3) {
     display: none;
   }
 
   &-hide {
     fill: #415257;
 
-    path:nth-child(3),
-    path:nth-child(4) {
+    path:nth-child(2),
+    path:nth-child(3) {
       display: block;
     }
   }
 }
 
-.icon-uncheck {
-  .path-check {
-    display: none;
-  }
-}
+
 
 .st0 {
   fill: map-get($colors, white);

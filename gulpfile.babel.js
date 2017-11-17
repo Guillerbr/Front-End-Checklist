@@ -65,7 +65,7 @@ const pugPaths = {
 // PUG / HTML
 // ========================================
 
-gulp.task('compile-pug', () => {
+gulp.task('compile-pug', ['json-rebuild'], () => {
   return gulp.src(pugPaths.src)
     .pipe(plumber((error) => {
       console.log(error);
@@ -78,10 +78,11 @@ gulp.task('compile-pug', () => {
       locals: {},
       pretty: true
     }))
-    .pipe(gulp.dest(dirs.dest));
+    .pipe(gulp.dest(dirs.dest))
+    .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('pug-rebuild', ['compile-pug'], () => {
+gulp.task('pug-rebuild', () => {
 	browserSync.reload();
 });
 
@@ -191,16 +192,22 @@ gulp.task("webpack", () => {
 // IMAGES
 // ========================================
 
-gulp.task('compress-images', () => {
-  return gulp.src(dirs.src + '/img/**/*.{jpg,png,webp}')
-   .pipe(imagemin([
-     imagemin.jpegtran({progressive: true}),
-     imagemin.optipng({optimizationLevel: 5}),
-     imageminWebp({quality: 70})
-   ]))
-   .pipe(gulp.dest(dirs.dest + '/img/'));
- });
+gulp.task('compress-images', ['compress-webp'], () => {
+  return gulp.src(dirs.src + '/img/**/*.{jpg,png}')
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5})
+    ]))
+    .pipe(gulp.dest(dirs.dest + '/img/'));
+});
 
+gulp.task('compress-webp', () => {
+  return gulp.src(dirs.src + '/img/**/*.webp')
+    .pipe(imagemin([
+      imageminWebp({quality: 70})
+    ]))
+    .pipe(gulp.dest(dirs.dest + '/img/'));
+});
 
 // ========================================
 // TDD
@@ -261,7 +268,7 @@ gulp.task("clean-coverage",  () => {
   return del(["./coverage"]);
 });
 
-gulp.task('json-rebuild', () => {
+gulp.task('json-rebuild', ['pug-rebuild'], () => {
   gulp.src("./data/en/items/*.json")
     .pipe(jsonConcat('./_items.json', (data) => {
       return new Buffer(JSON.stringify(data));
@@ -306,15 +313,15 @@ gulp.task( 'modernizr', (done) => {
 
 gulp.task("watch", function () {
   gulp.watch(dirs.src + '/styles/**/*.scss', ['lint-css', 'compile-styles']);
-  gulp.watch(dirs.src + '/views/**/*.pug', ['pug-rebuild']);
-  gulp.watch(['!'+ dirs.src + '/data/_*.json', dirs.src + '/data/*.json'], ['json-rebuild']);
+  gulp.watch(dirs.src + '/views/**/*.pug', ['compile-pug']);
+  gulp.watch(['!'+ dirs.src + '/data/en/**/_*.json', dirs.src + '/data/**/*.json'], ['json-rebuild']); // When JSON files are updated, concatenate these
+  gulp.watch(dirs.src + '/data/**/_*.json', ['compile-pug']); // When JSON are updated, compile PUG files
   gulp.watch(dirs.src + "/img/**/*", ["compress-images"]);
   gulp.watch([dirs.src + '/scripts/**/*.js'], ['lint', 'webpack']);
   gulp.watch(['test/**'], ['mocha']);
 });
 
-gulp.task("dev", ['compile-styles', 'compile-pug', "browser-sync", "watch"]);
-// gulp.task("build", ["compile-sass", "compile-js", "compile-pug", "compress-images"]);
+gulp.task("dev", ['compile-styles', 'json-rebuild', "browser-sync", "watch"]);
 
 gulp.task("build", (done) => {
   runSequence(

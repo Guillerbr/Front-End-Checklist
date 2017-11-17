@@ -1,4 +1,10 @@
-# Front-End Checklist
+![Front-End Checklist Logo](https://github.com/thedaviddias/Front-End-Checklist/blob/master/src/img/banners/front-end-checklist-banner-light.jpg?raw=true)
+
+<h2 align="center">Front-End Checklist</h2>
+
+<p align="center">
+  <em>A **Front-End Checklist** é uma lista exaustiva de todos elementos que você precisa ter / testar antes de lançar seu site / página HTML em produção.</em>
+</p>
 
 [![Participe do chat em https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
@@ -7,9 +13,11 @@
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-A **Front-End Checklist** é uma lista exaustiva de todos elementos que você precisa ter / testar antes de lançar seu site / página HTML em produção.
+Baseada em anos de experiência de desenvolvedores Front-End, com as adições provenientes de outras checklists open-source.
 
-Ela é baseada em anos de experiência de desenvolvedores Front-End, com as adições provenientes de outras checklists open-source.
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist.svg' />
+</a>
 
 ## Índice
 
@@ -605,26 +613,48 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ## SEO
 
-* [ ] **Google Analytics:** ![Alta][high_img] Google Analytics é corretamente instalado e configurado.
-* [ ] **Headings logic:** ![Média][medium_img] Texto de cabeçalho ajuda a entender o conteúdo da página atual.
-* [ ] **sitemap.xml:** ![Alta][high_img] Um sitemap.xml existe e foi submetido ao Google Search Console (anteriormente Google Webmaster Tools).
-* [ ] **robots.txt:** ![Alta][high_img] O robots.txt não está bloqueando webpages.
+* [ ] **Google Analytics:** ![High][high_img] Google Analytics está instalado e corretamente configurado.
 
+> * 🛠 [Google Analytics](https://analytics.google.com/analytics/web/)
+> * 🛠 [Checador de GA (e outros)](http://www.gachecker.com/)
+
+* [ ] **Lógica de cabeçalhos:** ![Medium][medium_img] Os textos de cabeçalho ajudam a entender o conteúdo na página atual.
+
+> * 🛠 [Tota11y, tab Headings](http://khan.github.io/tota11y/#Try-it)
+
+* [ ] **sitemap.xml:** ![High][high_img] Um sitemap.xml existe e foi submetido ao Google Search Console (anteriormente Google Webmaster Tools).
+
+> * 🛠 [Gerador de Sitemap](https://websiteseochecker.com/html-sitemap-generator/)
+
+* [ ] **robots.txt:** ![High][high_img] O robots.txt não está bloqueando páginas da web.
+
+> * 📖 [O arquivo robots.txt](https://varvy.com/robottxt.html)
 > * 🛠 Teste seu robots.txt com o [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
 
 * [ ] **Dados Estruturados:** ![Alta][high_img] Páginas usando dados estruturados são testadas e não possuem erros. Dados estruturados ajudam crawlers a entender o conteúdo da página atual.
 
 > * 📖 [Introdução a Dados Estruturados - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
-> * 🛠 Teste sua página com o [Ferramenta de Teste de Dados Estruturados](https://developers.google.com/structured-data/testing-tool/)
-> * 🛠 Lista completa de vocabulários que podem ser usados como dados estruturados. [Schema.org Hierarquia Completa](http://schema.org/docs/full.html)
 > * 📖 [RDFa - Dados Linkados no HTML](https://rdfa.info/)
 > * 📖 [JSON-LD](https://json-ld.org/)
 > * 📖 [Microdata](https://www.w3.org/TR/microdata/)
+> * 🛠 Teste sua página com a [Ferramenta de Teste de Dados Estruturados](https://developers.google.com/structured-data/testing-tool/)
+> * 🛠 Lista completa de vocabulários que podem ser usados como dados estruturados. [Schema.org Full Hierarchy](http://schema.org/docs/full.html)
 
 * [ ] **Sitemap HTML:** ![Média][medium_img] Um sitemap HTML é providenciado e acessível via um link no rodapé do seu website.
 
 > * 📖 [Diretrizes para Sitemaps - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
-> * 🛠 [Gerador de Sitemap](https://websiteseochecker.com/html-sitemap-generator/)
+
+* [ ] **Tags para links de Paginação:** ![Medium][medium_img] Providencie `rel="prev"` e `rel="next"` para indicar conteúdo pagiado
+
+> * 🛠 [Ferramenta de Tesde de Paginação (rel="prev/next")](https://technicalseo.com/seo-tools/rel-prev-next/)
+
+> * 📖 [Diretrizes de paginação - Google Support](https://support.google.com/webmasters/answer/1663744?hl=en)
+
+```html
+<!-- Exemplo: Tags para links de paginação para a segunda página de uma lista paginada -->
+<link rel="prev" href="https://exemplo.com/?page=1">
+<link rel="next" href="https://exemplo.com/?page=3">
+```
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -644,7 +674,7 @@ O Front-End Checklist também está disponível em outros idiomas. Obrigado a to
 * 🇹🇼 Chinês Tradicional: [EngineLin/Front-End-Checklist](https://github.com/EngineLin/Front-End-Checklist)
 * 🇫🇷 Francês: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
 * 🇷🇺 Russo: [ungear/Front-End-Checklist](https://github.com/ungear/Front-End-Checklist)
-* 🇹🇷 Turco: [erdoganoksuz/Front-End-Checklist](https://github.com/erdoganoksuz/Front-End-Checklist)
+* 🇹🇷 Turco: [erdoganoksuz/Front-End-Checklist](https://github.com/erdoganoksuz/Front-End-Checklist), [eraycetinay/Front-End-Checklist](https://github.com/eraycetinay/Front-End-Checklist)
 
 ---
 

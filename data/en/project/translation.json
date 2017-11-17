@@ -2,6 +2,7 @@
   "SITE_NAME": "The Front-End Checklist",
   "INDEX_TITLE": "🔥 Your NEW Front-End Tool 🔥",
   "URL_WEBSITE": "http://frontendchecklist.com",
+  "SITE_TAGLINE": "🗂 The Front-End Checklist Application is perfect for modern websites and meticulous developers!",
   "SITE_DESCRIPTION": "🗂 The Front-End Checklist Application is perfect for modern websites and meticulous developers! Follow the rules and deliver the best of your work in a generated report!",
   "SITE_LANGUAGE": "en",
   "SITE_DIRECTION": "ltr",
@@ -10,6 +11,7 @@
   "HIGH_CHECKED": "✓ high priority",
   "MEDIUM_CHECKED": "✓ medium priority",
   "LOW_CHECKED": "✓ low priority",
+  "PERCENTAGE_CHECKED": "items are ✓",
   "SECTION_DOCUMENTATION": "Documentation",
   "SECTION_TOOL": "Tools",
   "SECTION_VIDEO": "Videos",
@@ -37,4 +39,3 @@
     "GITHUB_STAR_MSG": "Star thedaviddias/Front-End-Checklist on GitHub"
   }
 }
-
