@@ -1,9 +1,9 @@
-[![Front-End Checklist Logo](https://github.com/thedaviddias/Front-End-Checklist/blob/master/src/img/banners/front-end-checklist-banner-light.jpg?raw=true)](http://frontendchecklist.com)
+[![Front-End Checklist Logo](https://github.com/thedaviddias/Front-End-Checklist/blob/master/src/img/banners/front-end-checklist-banner-light.jpg?raw=true)](https://frontendchecklist.io)
 
-<h2 align="center"><a href="http://frontendchecklist.com">Front-End Checklist</a></h2>
+<h2 align="center"><a href="https://frontendchecklist.io">Front-End Checklist</a></h2>
 
 <p align="center">
-  <em>A **Front-End Checklist** é uma lista exaustiva de todos elementos que você precisa ter / testar antes de lançar seu site / página HTML em produção.</em>
+  <em>A Front-End Checklist é uma lista exaustiva de todos elementos que você precisa ter / testar antes de lançar seu site / página HTML em produção.</em>
 </p>
 
 [![Participe do chat em https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -85,7 +85,7 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 
 ```html
 <!-- Viewport para web design responsivo -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
 * [ ] **Title:** ![Alta][high_img] Um título é usado em todas páginas (SEO: Google calcula a largura em píxel dos caracteres usados no título, cortados entre 472 e 482 píxels. O limite médio de caracteres seria em torno de 55-caracteres).
@@ -482,6 +482,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 📖 [Política de Segurança de Conteúdo - Uma Introdução - Scott Helme](https://scotthelme.co.uk/content-security-policy-an-introduction/)
 > * 📖 [Cheat Sheet CSP - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
 > * 📖 [Cheat Sheet CSP - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
+> * 📖 [Referência da Política de Segurança de Conteúdo](https://content-security-policy.com/)
 
 **[⬆ voltar ao topo](#Índice)**
 
@@ -674,7 +675,7 @@ O Front-End Checklist também está disponível em outros idiomas. Obrigado a to
 * 🇹🇼 Chinês Tradicional: [EngineLin/Front-End-Checklist](https://github.com/EngineLin/Front-End-Checklist)
 * 🇫🇷 Francês: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
 * 🇷🇺 Russo: [ungear/Front-End-Checklist](https://github.com/ungear/Front-End-Checklist)
-* 🇹🇷 Turco: [erdoganoksuz/Front-End-Checklist](https://github.com/erdoganoksuz/Front-End-Checklist), [eraycetinay/Front-End-Checklist](https://github.com/eraycetinay/Front-End-Checklist)
+* 🇹🇷 Turco: [eraycetinay/Front-End-Checklist](https://github.com/eraycetinay/Front-End-Checklist)
 
 ---
 

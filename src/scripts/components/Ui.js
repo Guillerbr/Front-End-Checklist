@@ -12,6 +12,15 @@ class Ui {
     return instance;
   }
 
+  lazyLoadImg(item) {
+    [].forEach.call(item.querySelectorAll('img[data-src]'), (img) => {
+      img.setAttribute('src', img.getAttribute('data-src'));
+      img.onload = function() {
+        img.removeAttribute('data-src');
+      };
+    });
+  }
+
   isScrolledIntoView(el) {
     var elemTop = el.getBoundingClientRect().top;
     var elemBottom = el.getBoundingClientRect().bottom;
@@ -25,7 +34,7 @@ class Ui {
 
   codeSponsor() {
     // Your personal token
-    const token = "r1beBERkvMtxu_7Bp-Wo_A";
+    const token = "DLYkTVJg-n5euzNvb3kU5A";
     // DOM variables elements
     const sponsorLink = document.querySelector('.cs__footer a');
     const blurb = document.querySelector('.cs__blurb');
