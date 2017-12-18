@@ -15,10 +15,6 @@
 
 Baseada em anos de experiência de desenvolvedores Front-End, com as adições provenientes de outras checklists open-source.
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist.svg' />
-</a>
-
 ## Índice
 
 1. **[Head](#head)**
@@ -31,6 +27,9 @@ Baseada em anos de experiência de desenvolvedores Front-End, com as adições p
 8. **[Performance](#performance)**
 9. **[Acessibilidade](#acessibilidade)**
 10. **[SEO](#seo)**
+11. **[Translations](#translations)**
+
+---
 
 ## Como usar?
 
@@ -46,6 +45,8 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 * 🛠: ferramenta online / ferramenta de teste
 * 📹: mídia ou conteúdo em vídeo
 
+> You can contribute to the ***Front-End Checklist App*** reading the [README_APP file](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README_APP.md) which explain everything about the project.
+
 ---
 
 ## Head
@@ -57,8 +58,7 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 * [ ] **Doctype:** ![Alta][high_img] O Doctype é HTML5 e está no topo de todas as suas páginas HTML.
 
 ```html
-<!-- Doctype HTML5 -->
-<!doctype html>
+<!doctype html> <!-- HTML5 -->
 ```
 
 > * 📖 [Determinando o encoding de caracteres - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
@@ -122,14 +122,22 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Qual Você Precisa? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Touch Icon:** ![Baixa][low_img] O apple touch favicon `apple-mobile-web-app-capable` está presente. *(Crie seu arquivo Apple Icon com pelo menos dimensão 200x200px para dar suporte a todas dimensões que você pode precisar).*
+* [ ] **Apple Web App Meta:** ![Baixa][low_img] Meta-tags da Apple estão presentes.
 
 ```html
-<!-- Apple Touch Icon -->
+<!-- Apple Touch Icon (at least 200x200px) -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
+
+<!-- To run web application in full-screen -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+<!-- Has no effect unless you have the previous meta tag -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 ```
 
 > * 📖 [Configurando Aplicações Web](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> * 📖 [Meta Tags Suportadas](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
 - [ ] **Windows Tiles:**![Baixa][low_img] Windows tiles estão presentes e linkadas.
 
@@ -197,7 +205,8 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **RSS feed:** ![Baixa][low_img] Se seu projeto é um blog ou possui artigos, foi providenciado o link do RSS.
 
-* [ ] **CSS Crítico inline:** ![Média][medium_img] CSS que estiliza conteúdo que é imediatamente visível durante carregamento de páginas (conteúdo "above the fold") é denominado "CSS Crítico. Ele é embutido antes da chamada CSS principal e entre `<style></style>` numa linha única (minificado).
+* [ ] **CSS Crítico:** ![Média][medium_img] O CSS crítico (ou "above the fold") coleta todo o CSS usado para renderizar a porção visível da página. Ele é embutido antes da chamada CSS principal e entre `<style></style>` numa linha única (minificado).
+
 > * 🛠 [Critical por Addy Osmani no Github](https://github.com/addyosmani/critical) automatiza isso.
 
 * [ ] **Ordem CSS:** ![Alta][high_img] Todos os arquivos CSS são carregados antes de quaisquer arquivos JavaScript no `<head>` (Exceto no caso onde, algumas vezes, arquivos JS são carregados assíncronamente no topo da página).
@@ -206,7 +215,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ***Facebook OG*** e ***Twitter Cards*** são, para qualquer website, altamente recomendados. As outras tags de mídia social podem ser consideradas se seu público-alvo tem uma presença em particular nelas, e você quer se assegurar de exibí-las.
 
-* [ ] **Facebook Open Graph:** ![Baixa][low_img] Todos os Facebook Open Graph (OG) são testados e nenhum está faltando ou com informações falsas. Imagens precisam ter no mínimo 600 x 315 píxels, 1200 x 630 píxels recomendados.
+* [ ] **Facebook Open Graph:** ![Baixa][low_img] Todos os Facebook Open Graph (OG) estão testados e nenhum está faltando ou com informações falsas. Imagens precisam ter no mínimo 600 x 315 píxels, porém é recomendado 1200 x 630 píxels.
 
 > **Notas:** Usar `og:image:width` e `og:image:height` vai especificar as dimensões da imagens para o _crawler_ para que ele renderize a imagem imediatamente sem ter que baixá-la e processá-la assíncronamente.
 
@@ -312,7 +321,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 * [ ] **Web Design Responsivo:** ![Alta][high_img] O website está usando web design responsivo.
 * [ ] **CSS Print:** ![Média][medium_img] Uma stylesheet de impressão correta é providenciada em cada página.
-* [ ] **Pré-processadores:** ![Média][medium_img] Sua página está usando um pré-processador CSS (preferencialmente [Sass](http://sass-lang.com/)).
+* [ ] **Pré-processadores:** ![Média][medium_img] Sua página está usando um pré-processador CSS (e.g. [Sass](http://sass-lang.com/)).
 * [ ] **ID Único:** ![Alta][high_img] Se IDs são usados, eles são únicos à página.
 * [ ] **Reset CSS:** ![Alta][high_img] Um CSS reset (reset, normalize ou reboot) está em uso e atualizado. *(Se você está usando um Framework CSS como Bootstrap ou Foundation, o Normalize já está incluído.)*
 
@@ -328,7 +337,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 <div id="id-usado-pelo-cms" class="js-slider meu-slider">
 ```
 
-* [ ] **CSS embed ou line:** ![Alta][high_img] Evite a todo custo o uso de CSS embutido em tags `<style>` ou inline: apenas utilizado por razões válidas (ex: background-image para slider, CSS critical).
+* [ ] **CSS embutido ou inline:** ![Alta][high_img] Evite a todo custo o uso de CSS embutido em tags `<style>` ou inline: apenas utilizado por razões válidas (ex: background-image para slider, CSS critical).
 * [ ] **Vendor prefixes:** ![Alta][high_img] Prefixos CSS de _vendor_ são usados e gerados de acordo com sua compatibilidade e suporte a navegadores.
 
 > * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
@@ -344,7 +353,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 - [ ] **CSS Inutilizado:** ![Baixa][low_img] Remover CSS inutilizado.
 
-> * 🛠 [UnCSS Online](https://uncss-online.com/) 🛠
+> * 🛠 [UnCSS Online](https://uncss-online.com/)
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
 > * 🛠 [Cobertura do DevTools do Chrome](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
@@ -366,7 +375,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Navegadores Mobile:**  ![High][high_img] Todas as páginas foram testadas em todos os navegadores mobile atuais (Browser nativo, Chrome, Safari...).
 * [ ] **SO:**  ![High][high_img] Todas as páginas foram testadas em todos os Sistemas Operacionais atuais (Windows, Android, iOS, Mac...).
 
-- [ ] **Pixel perfect:** ![High][high_img] As páginas estão alinhadas com o que foi desenhado. Dependendo na qualidade dos profissionais da área criativa, pode não ser 100% exato, mas sua página precisa estar próxima ao seu template.
+- [ ] **Fidelidade de design:** ![High][high_img] Dependendo do projeto e da qualidade dos profissionais da área criativa, pode ser requisitado que você se mantenha próximo ao que foi desenhado. Você pode usar algumas ferramentas para comparar as criações com sua implementação de código e assegurar consistência.
 
 > [Pixel Perfect - Extensão Chrome](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
@@ -390,10 +399,15 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 Use [ImageOptim](https://imageoptim.com/) para otimizar suas imagens gratuitamente.
 > * 🛠 Use [Kraken.io](https://kraken.io/web-interface) como uma alternativa incrível para otimização tanto png quanto jpg. Até 1MB por arquivo no plano gratuito.
+> * 🛠 [TinyPNG](https://tinypng.com/) otimize sem perdas imagens png, apng (png animado) e jpg. Versões gratuita e paga estão disponíveis.
+> * 🛠 [ZorroSVG](http://quasimondo.com/ZorroSVG/) compressão similar à do jpg para imagens transparentes usando mascaramento de svg.
+> * 🛠 [SVGO](https://github.com/svg/svgo) uma ferramenta baseada em Nodejs para otimização de arquivos de gráficos vetoriais SVG. 
+> * 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) uma versão GUI web do SVGO para otimização dos seus svgs online.
+
 
 * [ ] **Picture/Srcset:** ![Medium][medium_img] Você usa picture/srcset para providenciar a imagem mais apropriada para o viewport atual do usuário.
 
-> * 📖 [Como construir Imagens Responsivas com srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
+> * 📖 [Como Construir Imagens Responsivas com srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
 
 * [ ] **Retina:** ![Baixa][low_img] Você providencia imagens em layout x2 ou 3x, e suporta retina display.
 * [ ] **Sprite:** ![Média][medium_img] Imagens pequenas estão num arquivo sprite (no caso de ícones, eles podem estar num sprite SVG).
@@ -419,9 +433,22 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 📖 [Diretrizes do Desenvolvimento de Aplicações Seguras Utilizando JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
 
+* [ ] **Tag `noscript`:** ![Medium][medium_img] Use a tag `<noscript>` no body do HTML se um tipo de script na página não for suportado ou se scripting em geral está atualmente desabilitado no navegador. Isto ajudará em renderização _client-side_ de aplicações pesadas como React.js, veja [exemplos](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
+
+```html
+<noscript>
+  Você precisa habilitar JavaScript para rodar esta aplicação.
+</noscript>
+```
+
 * [ ] **Non-blocking:** ![Média][medium_img] Arquivos JavaScript são carregados assíncronamente usando atributo `async` ou deferidos usando atributo `defer`.
 
 > * 📖 [Removendo Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
+
+* [ ] **Bibliotecas JS Otimizadas e atualizadas:** ![Medium][medium_img] Todas as bibliotecas JavaScript usadas no projeto são necessárias (prefira Vanilla JavaScript (JS puro) para funcionalidades simples), atualizadas para sua versão mais atual e não sobrecarregam seu JavaScript com métodos desnecessários.
+
+> * 📖 [Você pode não precisar de jQuery](http://youmightnotneedjquery.com/)
+> * 📖 [Vanilla JavaScript para construção de aplicações web poderosas](https://plainjs.com/)
 
 * [ ] **Modernizr:** ![Baixa][low_img] Se você precisa visar features específicas, é possível usar um Modernizr custom para adicionar classes na sua tag `<html>`.
 
@@ -495,6 +522,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 - [ ] **Peso por página:** ![Alta][high_img] O peso de cada página está entre 0 e 500 KB.
 
 > * 🛠 [Análise de Página de Website](https://tools.pingdom.com)
+> * 🛠 [WebPageTest](https://www.webpagetest.org/)
 > * 📖 [Limite de Tamanho: Tornando a Web mais leve](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
 - [ ] **Minificado:** ![Média][medium_img] Seu HTML está minificado.
@@ -676,6 +704,7 @@ O Front-End Checklist também está disponível em outros idiomas. Obrigado a to
 * 🇫🇷 Francês: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
 * 🇷🇺 Russo: [ungear/Front-End-Checklist](https://github.com/ungear/Front-End-Checklist)
 * 🇹🇷 Turco: [eraycetinay/Front-End-Checklist](https://github.com/eraycetinay/Front-End-Checklist)
+* 🇩🇪 Alemão: [xfuture603/Front-End-Checklist](https://github.com/xFuture603/Front-End-Checklist)
 
 ---
 
@@ -717,9 +746,9 @@ Se você tem alguma pergunta ou sugestão, não hesite em usar o Gitter ou Twitt
 * [Facebook](https://www.facebook.com/frontendchecklist/)
 * [Twitter](https://twitter.com/thedaviddias)
 
-## Autores
+## Autor
 
-**[David Dias](https://github.com/thedaviddias/Front-End-Checklist)**
+**[David Dias](https://github.com/thedaviddias)**
 
 ## Contribuidores
 
