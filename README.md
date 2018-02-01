@@ -747,7 +747,7 @@ Se você tem alguma pergunta ou sugestão, não hesite em usar o Gitter ou Twitt
 
 ## Contribuidores
 
-This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
+Este projeto existe graças a todas as pessoas que contribuem. [[Contribute]](.github/CONTRIBUTING.md).
 <a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
 
 
