@@ -8,8 +8,8 @@
 
 ## Índice
 
-- [Install](#install)
 - [Instalação](#instalação)
+- [Utilização](#utilização)
 - [Adicionar uma nova tradução](#adicionarumanovatradução)
 - [Contribua](#contribute)
 - [Licensa](#licensa)
