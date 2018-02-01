@@ -355,6 +355,7 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/)
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
+> * 🛠 [PurgeCSS](https://github.com/FullHuman/purgecss)
 > * 🛠 [Cobertura do DevTools do Chrome](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
 
@@ -519,7 +520,10 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 
 ### Melhores práticas
 
-- [ ] **Peso por página:** ![Alta][high_img] O peso de cada página está entre 0 e 500 KB.
+- [ ] **Objetivos a alcançar:** ![Medium][medium_img] Suas páginas deveriam alcançar as seguintes metas:
+  - Primeira Pintura Significativa antes da marca de 1 segundo
+  - Tempo para Interação abaixo de 5 segundos para uma configuração "média" (um Android de ~R$700 numa rede 3G lenta com 400ms RTT e 400kbps de velocidade de transferência) e abaixo de 2 segundos para visitas repetidas
+  - Tamanho crítico de arquivos abaixo de 170Kb gzippado
 
 > * 🛠 [Análise de Página de Website](https://tools.pingdom.com)
 > * 🛠 [WebPageTest](https://www.webpagetest.org/)
@@ -602,15 +606,6 @@ O markup xml mínimo necessário para o arquivo browserconfig.xml é como segue:
 * [ ] **Cabeçalhos:** ![Alta][high_img] Cabeçalhos deveriam ser usados apropriadamente, na ordem correta (H1 até H6).
 
 > * 📹 [Por que cabeçalhos e landmarks são tão importantes -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
-
-#### Landmarks
-
-- [ ] **Banner role:** ![Alta][high_img] `<header>` tem `role="banner"`.
-- [ ] **Navigation role:** ![Alta][high_img] `<nav>` tem `role="navigation"`.
-- [ ] **Main role:** ![Alta][high_img] `<main>` tem `role="main"`.
-
-> * 📖 [Usando landmarks ARIA para identificar regiões de uma página](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
-> * 📖 [Categorização de roles ARIA](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
 
 ### Semântica
 
@@ -752,7 +747,7 @@ Se você tem alguma pergunta ou sugestão, não hesite em usar o Gitter ou Twitt
 
 ## Contribuidores
 
-Este projeto existe graças a todas as pessoas que contribuem. [[Contribua]](CONTRIBUTING.md).
+This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
 <a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
 
 
