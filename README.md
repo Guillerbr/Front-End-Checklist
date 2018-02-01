@@ -45,7 +45,7 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 * 🛠: ferramenta online / ferramenta de teste
 * 📹: mídia ou conteúdo em vídeo
 
-> Você pode contribuir no ***App Front-End Checklist*** lendo o [arquivo README_APP](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README_APP.md) que explica tudo sobe o projeto.
+> Você pode contribuir no ***App Front-End Checklist*** lendo o [arquivo README_APP](https://github.com/jcezarms/Front-End-Checklist/blob/master/README_APP.md) que explica tudo sobe o projeto.
 
 ---
 
