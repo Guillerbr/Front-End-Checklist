@@ -45,7 +45,7 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 * 🛠: ferramenta online / ferramenta de teste
 * 📹: mídia ou conteúdo em vídeo
 
-> You can contribute to the ***Front-End Checklist App*** reading the [README_APP file](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README_APP.md) which explain everything about the project.
+> Você pode contribuir no ***App Front-End Checklist*** lendo o [arquivo README_APP](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README_APP.md) que explica tudo sobe o projeto.
 
 ---
 
@@ -125,14 +125,14 @@ Alguns recursos possuem um emoticon para ajudar você a entender qual tipo de co
 * [ ] **Apple Web App Meta:** ![Baixa][low_img] Meta-tags da Apple estão presentes.
 
 ```html
-<!-- Apple Touch Icon (at least 200x200px) -->
+<!-- Apple Touch Icon (pelo menos 200x200px) -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
 
-<!-- To run web application in full-screen -->
+<!-- Para rodar a aplicação web em tela cheia -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Status Bar Style (see Supported Meta Tags below for available values) -->
-<!-- Has no effect unless you have the previous meta tag -->
+<!-- Estilo da Barra de Status (veja as Meta Tags suportadas abaixo para valores disponíveis) -->
+<!-- Não tem efeito nenhum se você não tiver a meta tag anterior -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 ```
 
