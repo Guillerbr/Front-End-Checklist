@@ -27,7 +27,7 @@ Baseada em anos de experiência de desenvolvedores Front-End, com as adições p
 8. **[Performance](#performance)**
 9. **[Acessibilidade](#acessibilidade)**
 10. **[SEO](#seo)**
-11. **[Translations](#translations)**
+11. **[Traduções](#traduções)**
 
 ---
 

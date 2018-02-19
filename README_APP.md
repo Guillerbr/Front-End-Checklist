@@ -10,8 +10,8 @@
 
 - [Instalação](#instalação)
 - [Utilização](#utilização)
-- [Adicionar uma nova tradução](#adicionarumanovatradução)
-- [Contribua](#contribute)
+- [Adicionar uma nova tradução](#adicionar-uma-nova-tradução)
+- [Contribua](#contribua)
 - [Licença](#licença)
 
 
