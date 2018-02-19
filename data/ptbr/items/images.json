@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Optimização",
+    "priority": "High",
+    "description": "Todas imagens estão otimizadas para serem renderizadas no navegador. O formato WebP poderia ser usado para páginas críticas (como a Homepage)",
+    "tools": [
+      {
+        "title": "Imagemin",
+        "url": "https://github.com/imagemin/imagemin"
+      },
+      {
+        "title": "Use ImageOptim para otimizar suas imagens gratuitamente.",
+        "url": "https://imageoptim.com/"
+      },
+      {
+        "title": "Use a incrível alternativa Kraken.io para otimização tanto de png quanto jpg. Até 1mb por arquivo no plano gratuito.",
+        "url": "https://kraken.io/web-interface"
+      }
+    ],
+    "tags": ["all", "images", "best practices"]
+  },
+  {
+    "title": "Picture/Srcset",
+    "priority": "Medium",
+    "description": "Voce usa picture/srcset para providenciar a imagem mais apropriada para o viewport atual do usuário.",
+    "documentation": [
+      {
+        "title": "Como construir Imagens Responsivas com srcset",
+        "url": "https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/"
+      }
+    ],
+    "tags": ["all", "images"]
+  },
+  {
+    "title": "Retina",
+    "priority": "Low",
+    "description": "Você providencia imagens em layout x2 ou 3x, e suporta retina display.",
+    "tags": ["all", "images"]
+  },
+  {
+    "title": "Sprite",
+    "priority": "Medium",
+    "description": "Imagens pequenas estão num arquivo sprite (no caso de ícones, eles podem estar num sprite SVG).",
+    "tags": ["all", "images"]
+  },
+  {
+    "title": "Altura e Largura",
+    "priority": "High",
+    "description": "Determine os atributos width e height em <img> se a imagem final renderizada é conhecida (pode ser omitido para CSS sizing)",
+    "tags": ["all", "images"]
+  },
+  {
+    "title": "Texto alternativo",
+    "priority": "High",
+    "description": "Todas as tags <img> têm um texto alternativo que descreve a imagem visualmente.",
+    "documentation": [
+      {
+        "title": "Alt-texts: O Guia Final",
+        "url": "https://axesslab.com/alt-texts/"
+      }
+    ],
+    "tags": ["all", "images"]
+  },
+  {
+    "title": "Lazy loading",
+    "priority": "Medium",
+    "description": "Imagens são carregadas de modo _lazy_, ou seja, por demanda (Um fallback para noscript é sempre providenciado).",
+    "tags": ["all", "images", "performance"]
+  }
+]

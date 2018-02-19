@@ -1,0 +1,166 @@
+[
+  {
+    "title": "Web Design Responsivo",
+    "priority": "High",
+    "description": "O website está usando web design responsivo.",
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "CSS Print",
+    "priority": "Medium",
+    "description": "Uma stylesheet é providenciada (e está correta) em cada página.",
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "ID Único",
+    "priority": "High",
+    "description": "Se IDs são usados, eles são únicos para uma mesma página.",
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "Reset CSS",
+    "priority": "High",
+    "description": "Um CSS reset (reset, normalize ou reboot) é usado e atualizado.",
+    "detail": "(Se você está usando um Framework CSS Framework como Bootstrap ou Foundation, um Normalize já está incluso.)",
+    "documentation": [
+      {
+        "title": "Reset.css",
+        "url": "https://meyerweb.com/eric/tools/css/reset/"
+      },
+      {
+        "title": "Normalize.css",
+        "url": "https://necolas.github.io/normalize.css/"
+      },
+      {
+        "title": "Reboot",
+        "url": "https://getbootstrap.com/docs/4.0/content/reboot/"
+      }
+    ],
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "Prefixo JS",
+    "priority": "Low",
+    "description": "Todas as classes (ou id- usado em arquivos JavaScript) começam com js- e não são estilizadas nos arquivos CSS.",
+    "code": "",
+    "tags": ["all", "javascript", "best practices"]
+  },
+  {
+    "title": "CSS inline ou embutido",
+    "priority": "High",
+    "description": "Evite a todo custo embutir CSS em tags <style> ou usando CSS inline",
+    "detail": "Utilize apenas por razões válidas (e.g. background-image para slider, CSS crítico).",
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "Vendor prefixes",
+    "priority": "High",
+    "description": "Prefixos CSS de vendor são usados e gerados de acordo com sua compatibilidade e suporte em navegadores.",
+    "tools": [
+      {
+        "title": "Autoprefixer CSS online",
+        "url": "https://autoprefixer.github.io/"
+      }
+    ],
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "Concatenação",
+    "priority": "High",
+    "description": "Arquivos CSS são concatenados num único arquivo (Não aplicado a HTTP/2).",
+    "tags": ["all", "css", "performance"]
+  },
+  {
+    "title": "Minificação",
+    "priority": "High",
+    "description": "Todos arquivos CSS estão minificados.",
+    "tags": ["all", "css", "performance"]
+  },
+  {
+    "title": "Non-blocking",
+    "priority": "Medium",
+    "description": "Arquivos CSS precisam ser non-blocking para prevenir o DOM de tomar tempo para carregar.",
+    "documentation": [
+      {
+        "title": "loadCSS por filament group",
+        "url": "https://github.com/filamentgroup/loadCSS"
+      },
+      {
+        "title": "Exemplo de CSS preload usando loadCSS",
+        "url": "https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf"
+      }
+    ],
+    "tags": ["all", "css", "performance"]
+  },
+  {
+    "title": "Stylelint",
+    "priority": "High",
+    "description": "Nenhum arquivo CSS ou SCSS possui erros.",
+    "documentation": [
+      {
+        "title": "Diretrizes Sass",
+        "url": "https://sass-guidelin.es/"
+      }
+    ],
+    "tools": [
+      {
+        "title": "stylelint, um linter CSS",
+        "url": "https://stylelint.io/"
+      }
+    ],
+    "tags": ["all", "css", "testing"]
+  },
+  {
+    "title": "Web design responsivo",
+    "priority": "High",
+    "description": "Todas as páginas foram testadas com os breakpoints corretos.",
+    "detail": "Exemplos de breakpoints: 320px, 768px, 1024px (podem ser mais / diferentes de acordo com o seu modelo de Analytics)",
+    "tags": ["all", "css", "testing"]
+  },
+  {
+    "title": "Validador CSS",
+    "priority": "Medium",
+    "description": "O CSS foi testados e erros pertinentes foram corrigidos.",
+    "tools": [
+      {
+        "title": "Validador CSS",
+        "url": "https://jigsaw.w3.org/css-validator/"
+      }
+    ],
+    "tags": ["all", "css", "testing"]
+  },
+  {
+    "title": "Navegadores Desktop",
+    "priority": "High",
+    "description": "Todas as páginas foram testadas em todos os navegadores desktop atuais (Safari, Firefox, Chrome, Internet Explorer, EDGE...)",
+    "tags": ["all", "css", "testing"]
+  },
+  {
+    "title": "Navegadores Mobile",
+    "priority": "High",
+    "description": "Todas as páginas foram testadas em todos os navegadores mobile atuais (Browser nativo, Chrome, Safari...)",
+    "tags": ["all", "css", "testing"]
+  },
+  {
+    "title": "SO",
+    "priority": "High",
+    "description": "Todas as páginas foram testadas em todos os SOs atuais (Windows, Android, iOS, Mac...)",
+    "tags": ["all", "css", "testing"]
+  },
+  {
+    "title": "Direção de leitura",
+    "priority": "High",
+    "description": "Todas as páginas precisam ser testadas para idiomas LTR e RTL se eles precisam ser suportados.",
+    "documentation": [
+      {
+        "title": "Construindo RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks",
+        "url": "https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/"
+      },
+      {
+        "title": "Construindo RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks",
+        "url": "https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-2/"
+      }
+    ],
+    "tags": ["all", "css", "testing"]
+  }
+]

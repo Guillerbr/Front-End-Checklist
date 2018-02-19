@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Melhoramento progressivo",
+    "priority": "Medium",
+    "description": "Funcionalidades principais como navegação e busca deveriam funcionar sem JavaScript habilitado.",
+    "documentation": [
+      {
+        "title": "Habilite / Desabilite JavaScript no Chrome Developer Tools",
+        "url": "https://www.youtube.com/watch?v=kBmvq2cE0D8"
+      }
+    ],
+    "tags": ["all", "best practices"]
+  },
+  {
+    "title": "Contraste de cor",
+    "priority": "Medium",
+    "description": "Contraste das cores deveria pelo menos passar o WCAG AA (AAA para mobile).",
+    "tools": [
+      {
+        "title": "Índice de Contraste",
+        "url": "https://leaverou.github.io/contrast-ratio/"
+      }
+    ],
+    "tags": ["all", "best practices"]
+  },
+  {
+    "title": "H1",
+    "priority": "High",
+    "description": "Todas as páginas têm um H1 que não é o título do website.",
+    "tags": ["all", "best practices", "seo"]
+  },
+  {
+    "title": "Cabeçalhos",
+    "priority": "High",
+    "description": "Cabeçalhos deveriam ser usados apropriadamente e na ordem correta (H1 até H6).",
+    "video": [
+      {
+        "title": "Por que cabeçalhos e landmarks são tão importantes -- A11ycasts #18",
+        "url": "https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"
+      }
+    ],
+    "tags": ["all", "best practices"]
+  },
+  {
+    "title": "Tipos de input específicos do HTML5 são usados",
+    "priority": "Medium",
+    "description": "Isto é especialmente importante para dispositivos mobile que mostram teclados e widgets customizados para diferentes tipos.",
+    "documentation": [
+      {
+        "title": "Tipos de Input Mobile",
+        "url": "http://mobileinputtypes.com/"
+      }
+    ],
+    "tags": ["all"]
+  },
+  {
+    "title": "Label",
+    "priority": "High",
+    "description": "Uma label está associada com cada elemento input dos formulários. No caso em que uma label não possa ser exibida, use então uma aria-label.",
+    "documentation": [
+      {
+        "title": "Usando o atributo aria-label - MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute"
+      }
+    ],
+    "tags": ["all"]
+  },
+  {
+    "title": "Teste de padrões de Acessibilidade",
+    "priority": "High",
+    "description": "Use a ferramenta WAVE para testar se sua página respeita os padrões de acessibilidade.",
+    "tools": [
+      {
+        "title": "Wave testing",
+        "url": "http://wave.webaim.org/"
+      }
+    ],
+    "tags": ["all", "testing"]
+  },
+  {
+    "title": "Navegação de Teclado",
+    "priority": "High",
+    "description": "Teste seu website usando apenas o teclado numa ordem previsível. Todos elementos interativos são alcançáveis e utilizáveis.",
+    "tags": ["all", "testing"]
+  },
+  {
+    "title": "Screen-reader",
+    "priority": "Medium",
+    "description": "Todas páginas foram testadas num screen-reader (VoiceOver, ChromeVox, NVDA ou Lynx).",
+    "tags": ["all", "testing"]
+  },
+  {
+    "title": "Estilo de foco",
+    "priority": "High",
+    "description": "Se o foco está desabilitado, ele é substituído por estado visível em CSS.",
+    "video": [
+      {
+        "title": "Gerenciando o Foco - A11ycasts #22",
+        "url": "https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g"
+      }
+    ],
+    "tags": ["all", "testing"]
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "title": "Peso por página",
+    "priority": "High",
+    "description": "O peso de cada página está entre 0 e 500 KB.",
+    "documentation": [
+      {
+        "title": "Limite de Tamanho: Torne a Web mais leve",
+        "url": "https://evilmartians.com/chronicles/size-limit-make-the-web-lighter"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Análise de Página de Website",
+        "url": "https://tools.pingdom.com/"
+      }
+    ],
+    "tags": ["all", "performance"]
+  },
+  {
+    "title": "HTML Minificado",
+    "priority": "Medium",
+    "description": "Seu HTML está minificado.",
+    "tags": ["all", "html", "performance"]
+  },
+  {
+    "title": "Lazy loading",
+    "priority": "Medium",
+    "description": "Imagens, scripts e CSS precisam ser carregados de modo lazy para melhorar o tempo de resposta da página atual (Veja detalhes nas seções respectivas).",
+    "tags": ["all", "best practices"]
+  },
+  {
+    "title": "Tamanho dos Cookies",
+    "priority": "Medium",
+    "description": "Se você está usando cookies, certifique-se de que cada cookie não excede 4096 bytes e que seu _domain name_ não tem mais de 20 cookies.",
+    "documentation": [
+      {
+        "title": "Especificação de Cookie: RFC 6265",
+        "url": "https://tools.ietf.org/html/rfc6265"
+      },
+      {
+        "title": "Cookies",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Limites de Cookie em Navegadores",
+        "url": "http://browsercookielimits.squawky.net/"
+      }
+    ],
+    "tags": ["all", "best practices"]
+  },
+  {
+    "title": "Componentes de terceiros",
+    "priority": "Medium",
+    "description": "",
+    "detail": "Iframes ou componentes de terceiros que dependam em JavaScript externo (como botões de compartilhamento) são substituidos por componentes estáticos quando possível, assim limitando chamadas a APIs externas, e mantendo privadas as atividades de seus usuários.",
+    "tools": [
+      {
+        "title": "Gerador simples de botões de compartilhamento",
+        "url": "https://simplesharingbuttons.com/"
+      }
+    ],
+    "tags": ["all", "best practices"]
+  },
+  {
+    "title": "Resolução DNS",
+    "priority": "Low",
+    "description": "DNS de serviços de terceiros que podem ser necessários são adiantadamente preparados durante tempo ocioso, usando `dns-prefetch`.",
+    "code": "https://gist.github.com/thedaviddias/e58e7302c032f8145ca80f302934c895.js",
+    "tags": ["all", "requests"]
+  },
+  {
+    "title": "Preconnection",
+    "priority": "Low",
+    "description": "DNS lookup, TCP handshake e negociação TLS com serviços que serão necessários em breve, são ambos feitos adiantadamente durante tempo ocioso, usando `preconnect`.",
+    "code": "https://gist.github.com/thedaviddias/661285b7bb83222ba91b449c0d4e3d96.js",
+    "tags": ["all", "requests"]
+  },
+  {
+    "title": "Prefetching",
+    "priority": "Low",
+    "description": "Recursos que serão necessários em breve (ex.: imagens em lazy loading) são requisitados adiantadamente durante tempo ocioso, usando `prefetch`.",
+    "code": "https://gist.github.com/thedaviddias/e7b896ce3d0539f5c027b9a66321f116.js",
+    "tags": ["all", "requests"]
+  },
+  {
+    "title": "Preloading",
+    "priority": "Low",
+    "description": "Recursos necessários na página atual (ex.: scripts colocados no fim do `<body>`) adiantadamente usando `preload`.",
+    "code": "https://gist.github.com/thedaviddias/492daa550b8892b95304a7b9b86c3236.js",
+    "tools": [
+      {
+        "title": "Diferenças entre prefetch e preload",
+        "url": "https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf"
+      }
+    ],
+    "tags": ["all", "requests"]
+  },
+  {
+    "title": "Google PageSpeed",
+    "priority": "High",
+    "description": "Todas suas páginas foram testadas (não apenas na homepage) e têm uma pontuação de pelo menos 90/100.",
+    "tools": [
+      {
+        "title": "Google PageSpeed",
+        "url": "https://developers.google.com/speed/pagespeed/insights/"
+      },
+      {
+        "title": "Teste sua velocidade mobile speed com Google",
+        "url": "https://testmysite.withgoogle.com/"
+      },
+      {
+        "title": "WebPagetest - Teste de Performance e Otimização de Website",
+        "url": "https://www.webpagetest.org/"
+      },
+      {
+        "title": "GTmetrix - Otimização de velocidade e performance de Website",
+        "url": "https://gtmetrix.com/"
+      }
+    ],
+    "tags": ["all", "testing"]
+  }
+]

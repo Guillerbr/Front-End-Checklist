@@ -1,0 +1,88 @@
+[
+  {
+    "title": "Elementos Semânticos HTML5",
+    "priority": "High",
+    "description": "Elementos Semânticos do HTML5 são usados apropriadamente (header, section, footer, main...).",
+    "tools": [
+      {
+        "title": "HTML Reference",
+        "url": "http://htmlreference.io/"
+      }
+    ],
+    "tags": ["all", "html", "best practices"]
+  },
+  {
+    "title": "Páginas de erro",
+    "priority": "High",
+    "description": "As páginas de erro 404 e 5xx existem",
+    "detail": "Lembre-se que as páginas de erro 5xx precisam ter seu CSS integrado (sem chamadas externas no servidor atual).",
+    "tags": ["all", "html", "best practices"]
+  },
+  {
+    "title": "Noopener",
+    "priority": "Medium",
+    "description": "No caso de você estar usando links externos com target=\"_blank\", seu link deveria ter um atributo rel=\"noopener\" para prevenir tab nabbing. Se você precisa de suporte a versões mais antigas do Firefox, use rel=\"noopener noreferrer\"",
+    "documentation": [
+      {
+        "title": "Sobre rel=noopener",
+        "url": "https://mathiasbynens.github.io/rel-noopener/"
+      }
+    ],
+    "tags": ["all", "html", "best practices", "security"]
+  },
+  {
+    "title": "Limpar comentários",
+    "priority": "Low",
+    "description": "Código desnecessário precisa ser removido antes de mandar a página para produção.",
+    "tags": ["all", "html", "best practices"]
+  },
+  {
+    "title": "W3C compliant",
+    "priority": "High",
+    "description": "Todas as páginas precisam ser testadas com o validador W3C para identificar possíveis problemas no código HTML.",
+    "tools": [
+      {
+        "title": "W3C validator",
+        "url": "https://validator.w3.org/"
+      }
+    ],
+    "tags": ["all", "html", "testing"]
+  },
+  {
+    "title": "HTML Lint",
+    "priority": "High",
+    "description": "Eu uso ferramentas para me ajudar a analisar os problemas que eu poderia ter no meu código HTML.",
+    "tools": [
+      {
+        "title": "Dirty markup",
+        "url": "https://dirtymarkup.com/"
+      },
+      {
+        "title": "Sonar, uma ferramenta de linting para a web",
+        "url": "https://sonarwhal.com/"
+      }
+    ],
+    "tags": ["all", "html", "testing"]
+  },
+  {
+    "title": "Link checker",
+    "priority": "High",
+    "description": "Não há links quebradoos na minha página, verifique que você não tem nenhum erro 404.",
+    "tools": [
+      {
+        "title": "W3C Link Checker",
+        "url": "https://validator.w3.org/checklink"
+      }
+    ],
+    "tags": ["all", "html", "testing"]
+  },
+  {
+    "title": "Teste de Adblockers",
+    "priority": "Medium",
+    "description": "Seu website mostra o conteúdo corretamente com adblockers habilitados",
+    "detail": "(Você pode providenciar uma mensagem encourajando as pessoas a desabilitar seu adblocker)",
+    "tags": ["all", "html", "testing"]
+  }
+
+
+]

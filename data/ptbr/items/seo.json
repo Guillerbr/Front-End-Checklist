@@ -1,0 +1,141 @@
+[
+  {
+    "title": "Google Analytics",
+    "priority": "High",
+    "description": "Google Analytics está instalado e corretamente configurado.",
+    "tools": [
+      {
+        "title": "Google Analytics",
+        "url": "https://analytics.google.com/analytics/web/"
+      },
+      {
+        "title": "GA Checker (and others)",
+        "url": "http://www.gachecker.com/"
+      }
+    ],
+    "tags": ["all", "seo"]
+  },
+  {
+    "title": "Lógica de cabeçalhos",
+    "priority": "Medium",
+    "description":
+      "Textos de cabeçalho ajudam a entender o conteúdo na página atual.",
+    "tools": [
+      {
+        "title": "Tota11y, tab Headings",
+        "url": "http://khan.github.io/tota11y/#Try-it"
+      }
+    ],
+    "tags": ["all", "seo", "accessibility", "html"]
+  },
+  {
+    "title": "sitemap.xml",
+    "priority": "High",
+    "description":
+      "Um sitemap.xml existe e foi submetido ao Google Search Console.",
+    "detail": "(anteriormente chamado Google Webmaster Tools)",
+    "tools": [
+      {
+        "title": "Gerador de sitemap",
+        "url": "https://websiteseochecker.com/html-sitemap-generator/"
+      }
+    ],
+    "tags": ["all", "seo"]
+  },
+  {
+    "title": "robots.txt",
+    "priority": "High",
+    "description": "O robots.txt não está bloqueando as páginas da web.",
+    "documentation": [
+      {
+        "title": "O arquivo robots.txt",
+        "url": "https://varvy.com/robottxt.html"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Teste seu robots.txt com a Ferramenta de Teste de Robôs do Google",
+        "url": "https://www.google.com/webmasters/tools/robots-testing-tool"
+      }
+    ],
+    "tags": ["all", "seo", "testing"]
+  },
+  {
+    "title": "Dados Estruturados",
+    "priority": "High",
+    "description":
+      "Páginas usando dados estruturados (structured data) estão testadas e sem erros. Structured data ajuda crawlers a entenderem o conteúdo na página atual.",
+    "documentation": [
+      {
+        "title": "Introdução a Structured Data - Pesquisa - Google Developers",
+        "url":
+          "https://developers.google.com/search/docs/guides/intro-structured-data"
+      },
+      {
+        "title": "RDFa - Linked Data em HTML",
+        "url": "https://rdfa.info/"
+      },
+      {
+        "title": "JSON-LD",
+        "url": "https://json-ld.org/"
+      },
+      {
+        "title": "Microdata",
+        "url": "https://www.w3.org/TR/microdata/"
+      },
+      {
+        "title": "Teste sua página com a Ferramenta de Teste de Structured Data do Google",
+        "url": "https://developers.google.com/structured-data/testing-tool/"
+      },
+      {
+        "title":
+          "Lista completa de vocabulários que podem ser usados como structured data. Hierarquia completa do Schema.org",
+        "url": "http://schema.org/docs/full.html"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Teste sua página com a Ferramenta de Teste de Structured Data do Google",
+        "url": "https://developers.google.com/structured-data/testing-tool/"
+      },
+      {
+        "title":
+        "Lista completa de vocabulários que podem ser usados como structured data. Hierarquia completa do Schema.org",
+        "url": "http://schema.org/docs/full.html"
+      }
+    ],
+    "tags": ["all", "seo", "testing"]
+  },
+  {
+    "title": "Sitemap HTML",
+    "priority": "Medium",
+    "description":
+      "Um sitemap HTML é providenciado e é acessível via um link no rodapé do seu website.",
+    "documentation": [
+      {
+        "title": "Diretrizes de Sitemap - Google Support",
+        "url": "https://support.google.com/webmasters/answer/183668?hl=en"
+      }
+    ],
+    "tags": ["all", "seo", "html"]
+  },
+  {
+    "title": "Paginação com link tags",
+    "priority": "Medium",
+    "description":
+      "Providencie rel=\"prev\" e rel=\"next\" para indicar conteúdo paginado. ",
+    "documentation": [
+      {
+        "title": "Diretrizes de Paginação - Google Support",
+        "url": "https://support.google.com/webmasters/answer/1663744?hl=en"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Ferramenta de Teste de Paginação (rel=\"prev/next\")",
+        "url": "https://technicalseo.com/seo-tools/rel-prev-next/"
+      }
+    ],
+    "tags": ["all", "seo", "html"]
+  }
+]

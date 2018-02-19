@@ -1,0 +1,255 @@
+[
+  {
+    "title": "Doctype",
+    "priority": "High",
+    "description": "O Doctype é HTML5 e está no topo de todas as suas páginas HTML.",
+    "code": "https://gist.github.com/thedaviddias/bccee9f4dfa728830cf38bb83838d2d3.js",
+    "documentation": [
+      {
+        "title": "Determinando encoding de caracteres - HTML5 W3C",
+        "url": "https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding"
+      }
+    ],
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Charset",
+    "priority": "High",
+    "description": "O charset declarado (UTF-8) é declarado corretamente.",
+    "code": "https://gist.github.com/thedaviddias/7074c2b93faf1ad1f0c2792258a9b060.js",
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "X-UA-Compatible",
+    "priority": "Medium",
+    "description": "A meta tag X-UA-Compatible está presente.",
+    "code": "https://gist.github.com/thedaviddias/4f771e7efc07688c090a28ef1121b15e.js",
+    "documentation": [
+      {
+        "title": "Especificando modos legados de document (Internet Explorer)",
+        "url": "https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx"
+      }
+    ],
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Viewport",
+    "priority": "High",
+    "description": "O viewport é declarado corretamente.",
+    "code": "https://gist.github.com/thedaviddias/0e25ffd442512c79af684b5042366a3c.js",
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Título",
+    "priority": "High",
+    "description": "Um título é usado em todas as páginas",
+    "detail": "SEO: O Google clacula a largura em pixel dos caracteres usados no título e corta entre 472 e 482 pixels. O limite médio de caracteres seria em torno de 55 caracteres",
+    "code": "https://gist.github.com/thedaviddias/65d0df3b6e2ebcb0d3c738b40f6ff313.js",
+    "documentation": [
+      {
+        "title": "Título - HTML - MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Gerador de Snippet SERP",
+        "url": "https://www.sistrix.com/serp-snippet-generator/"
+      }
+    ],
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Descrição",
+    "priority": "High",
+    "description": "Uma descrição meta é providenciada, é única e não possui mais de 150 caracteres.",
+    "code": "https://gist.github.com/thedaviddias/8f3c61ed6cf08b75524d977828337c62.js",
+    "documentation": [
+      {
+        "title": "Descrição Meta - HTML - MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description"
+      }
+    ],
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Favicons",
+    "priority": "Medium",
+    "description": "Cada favicon foi criado e é exibido corretamente.",
+    "detail": "Se você só possui um favicon.ico, ponha-o na raiz do seu site. Normalmente você não precisará usar nenhum markup. Entretanto, ainda é uma boa prática linkar ele usando o exemplo abaixo. Hoje, o formato PNG é recomendado em relação ao formato .ico (dimensões: 32x32px).",
+    "code": "https://gist.github.com/thedaviddias/dd4e98c10283d310d24f22dfc49f1aaf.js",
+    "documentation": [
+      {
+        "title": "Favicon Cheat Sheet",
+        "url": "https://github.com/audreyr/favicon-cheat-sheet"
+      },
+      {
+        "title": "Favicons, Touch Icons, Tile Icons, etc. Qual Você Precisa? - CSS Tricks",
+        "url": "https://css-tricks.com/favicon-quiz/"
+      },
+      {
+        "title": "PNG favicons - caniuse",
+        "url": "https://caniuse.com/#feat=link-icon-png"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Gerador de Favicon",
+        "url": "https://www.favicon-generator.org/"
+      },
+      {
+        "title": "RealFaviconGenerator",
+        "url": "https://realfavicongenerator.net/"
+      }
+    ],
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Apple Web App Meta",
+    "priority": "Low",
+    "description": "Meta-tags da Apple estão presentes.",
+    "code": "https://gist.github.com/thedaviddias/4fbbc4c83cd76ebd0d2f18cc1b40f1a9.js",
+    "documentation": [
+      {
+        "title": "Configurando Aplicações Web",
+        "url": "https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html"
+      },
+      {
+        "title": "Meta Tags Suportadas",
+        "url": "https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html"
+      }
+    ],
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Windows Tiles",
+    "priority": "Low",
+    "description": "Windows tiles estão presentes e linkados.",
+    "code": "https://gist.github.com/thedaviddias/4cc20da1a32d201f8dd46edf47d7fb73.js",
+    "documentation": [
+      {
+        "title": "Configuração de navegadores e referência de schema",
+        "url": "https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx"
+      }
+    ],
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Canonical",
+    "priority": "Medium",
+    "description": "Use rel=\"canonical\" para evitar conteúdo duplicado.",
+    "code": "https://gist.github.com/thedaviddias/832a59506fd93e84d62dce0238b0cb23.js",
+    "documentation": [
+      {
+        "title": "Use canonical URLs - Search Console Help - Google Support",
+        "url": "https://support.google.com/webmasters/answer/139066?hl=en"
+      },
+      {
+        "title": "5 common mistakes with rel=canonical - Google Webmaster Blog",
+        "url": "https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html"
+      }
+    ],
+    "tags": ["all", "Meta tag"]
+  },
+  {
+    "title": "Atributo de idioma",
+    "priority": "High",
+    "description": "O atributo <code>lang</code> do seu website é especificado e relacionado ao idioma da página atual.",
+    "code": "",
+    "tags": ["all", "HTML tag"]
+  },
+  {
+    "title": "Atributo de direção",
+    "priority": "Medium",
+    "description": "A direção de leitura é especificada na tag html (Pode ser usado noutra tag HTML).",
+    "code": "",
+    "tags": ["all", "HTML tag"]
+  },
+  {
+    "title": "Idioma alternativo",
+    "priority": "Low",
+    "description": "A tag de idiooma do seu website é especificada e relacionada ao idioma da página atual.",
+    "code": "",
+    "tags": ["all", "HTML tag"]
+  },
+  {
+    "title": "Comentários condicionais",
+    "priority": "Low",
+    "description": "Comentários condicionais estão presentes para o IE se necessário.",
+    "documentation": [
+      {
+        "title": "Sobre comentários condicionais (Internet Explorer) - MSDN - Microsoft",
+        "url": "https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx"
+      }
+    ],
+    "tags": ["all", "HTML tag"]
+  },
+  {
+    "title": "RSS feed",
+    "priority": "Low",
+    "description": "Se seu projeto é unm blog ou possui artigos, um link de RSS é providenciado.",
+    "tags": ["all", "HTML tag"]
+  },
+  {
+    "title": "CSS crítico inline",
+    "priority": "Medium",
+    "description": "O CSS crítico inline é corretamente injetado no HEAD.",
+    "detail": "O CSS crítico (ou above the fold) coleta todo CSS usado para renderizar a porção visível da página. Ele é embutido antes da chamada do CSS principal e entre `<style></style>` numa linha única (minificado).",
+    "tools": [
+      {
+        "title": "Critical por Addy Osmani no GitHub automates this.",
+        "url": "https://github.com/addyosmani/critical"
+      }
+    ],
+    "tags": ["all", "HTML tag", "CSS", "Performance"]
+  },
+  {
+    "title": "Ordem CSS",
+    "priority": "High",
+    "description": "Todos arquivos files são carregados antes que qualquer arquivo JavaScript no HEAD",
+    "detail": "(Exceto no caso onde os arquivos JS são certas vezes carregados assíncronamente no topo da sua página)",
+    "tags": ["all", "HTML tag"]
+  },
+  {
+    "title": "Facebook Open Graph",
+    "priority": "Low",
+    "description": "",
+    "detail": "Todos Facebook Open Graph (OG) estão testados e em nenhum está faltando ou com informação falsa. Imagem precisam ter no mínimo 600 x 315 pixels, apesar de 1200 x 630 pixels ser o recomendado. Usar og:image:width e og:image:height especificará as dimensões da imagem para o crawler para que ele possa renderizar a imagem imediatamente sem ter que baixá-la e processá-la assíncronamente.",
+    "code": "",
+    "documentation": [
+      {
+        "title": "Um Guia de Compartilhamento para Webmasters",
+        "url": "https://developers.facebook.com/docs/sharing/webmasters/"
+      },
+      {
+        "title": "Melhores Práticas - Compartilhamento",
+        "url": "https://developers.facebook.com/docs/sharing/best-practices/"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Teste sua página com a Ferramenta de Teste de OG do Facebook",
+        "url": "https://developers.facebook.com/tools/debug/"
+      }
+    ],
+    "tags": ["all", "Social meta", "testing"]
+  },
+  {
+    "title": "Twitter Card",
+    "priority": "Low",
+    "description": "",
+    "documentation": [
+      {
+        "title": "Iniciando com cards — Desenvolvedores do Twitter",
+        "url": "https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Teste sua página com o Validador de Twitter card",
+        "url": "https://cards-dev.twitter.com/validator"
+      }
+    ],
+    "tags": ["all", "Social meta", "testing"]
+  }
+]
