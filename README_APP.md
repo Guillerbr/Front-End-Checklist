@@ -1,53 +1,53 @@
-# Front-End Checklist App
+# App Front-End Checklist
 
-[![Join the chat at https://gitter.im/Front-End-Checklist/Lobby][gitter-image]][gitter-url] [![Latest npm version][npm-image]][npm-url] [![Build status][travis-image]][travis-url] [![Maintainability][codeclimate-maintainability-image]][codeclimate-maintainability-url] [![Test Coverage][codeclimate-coverage-image]][codeclimate-coverage-url] [![Greenkeeper badge][greenkeeper-img]][greenkeeper-url] [![Front‑End_Checklist followed][frontendchecklist-image]][frontendchecklist-url] [![Backers on Open Collective][opencollective-backers-image]][opencollective-backers-url] [![Sponsors on Open Collective][opencollective-sponsors-image]][opencollective-sponsors-url]
+[![Participe do chat em https://gitter.im/Front-End-Checklist/Lobby][gitter-image]][gitter-url] [![Versão npm mais recente][npm-image]][npm-url] [![Build status][travis-image]][travis-url] [![Manutenibilidade][codeclimate-maintainability-image]][codeclimate-maintainability-url] [![Cobertura de Testes][codeclimate-coverage-image]][codeclimate-coverage-url] [![Greenkeeper badge][greenkeeper-img]][greenkeeper-url] [![Front‑End_Checklist followed][frontendchecklist-image]][frontendchecklist-url] [![Backers na Open Collective][opencollective-backers-image]][opencollective-backers-url] [![Patrocinadores na Open Collective][opencollective-sponsors-image]][opencollective-sponsors-url]
 
 
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 
-## Table of Contents
+## Índice
 
-- [Install](#install)
-- [Install](#install)
-- [Add new translation](#addnewtranslation)
-- [Contribute](#contribute)
-- [License](#license)
+- [Instalação](#instalação)
+- [Utilização](#utilização)
+- [Adicionar uma nova tradução](#adicionarumanovatradução)
+- [Contribua](#contribute)
+- [Licença](#licença)
 
 
 
-## Install
+## Instalação
 
-To install and run, open a terminal and use the following commands:
+Para instalar e rodar, abra um terminal e use os seguintes comandos:
 
 ```shell
     npm install
     npm start or gulp dev
 ```
-## Usage
+## Utilização
 
 
-## Add new translation
+## Adicionar uma nova tradução
 
-To add a new translation for the Front-End Checklist, you just need to translate the original JSON files in English to your own language.
+Para adicionar uma nova tradução para o Front-End Checklist, você só precisa traduzir os arquivos JSON originais em Inglês para o seu idioma.
 
-- [ ] Duplicate `data/en` folder and change the name of the folder to:
-  * jp for Japanese
-  * es for Spanish
-  * cn for Chinese
-  * fr for French
+- [ ] Duplique a pasta `data/en` e mude o nome da pasta para:
+  * jp para Japonês
+  * es para Espanhol
+  * cn para Chinês
+  * fr para Francês
 
-- [ ] Launch the GULP development mode adding the `--l` argument and your language
+- [ ] Inicie o modo de desenvolvimento do GULP adicionando a opção `--l` e seu idioma
 
   ```shell
     gulp dev --l jp
   ```
 
-- [ ] Translate all JSON files starting with the `project` folder
+- [ ] Traduza todos os arquivos JSON iniciando na pasta `project`
 
-> You'll need to stop the development mode, manually launch `gulp json-rebuild`, and launch again the dev mode in order to see your changes on the view.
+> Você precisará parar o modo de desenvolvimento, iniciar manualmente `gulp json-rebuild`, e reiniciar o modo dev para poder observar suas mudanças.
 
-- [ ] Update the `views/base/header.pug` with the right flag and url (you can download your flag if not already in `src/img/flags` at http://flag-icon-css.lip.is/)
+- [ ] Atualize o `views/base/header.pug` com a bandeira e url correta (você pode baixar sua bandeira se ainda não estiver em `src/img/flags` no site http://flag-icon-css.lip.is/)
 
   ```haml
     li.s-header__lang__item
@@ -55,17 +55,17 @@ To add a new translation for the Front-End Checklist, you just need to translate
         img(src="/img/flags/jp.svg" width="20" height="15" alt="Japanese language")
   ```
 
-## Author
+## Autor
 
 **[David Dias](https://github.com/thedaviddias)**
 
-## Contribute
+## Contribua
 
-## License
+## Licensa
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ voltar ao topo](#table-of-contents)**
 
 
 
